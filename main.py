@@ -15,6 +15,7 @@ from matplotlib import pyplot as plt
 red, blue = min, max
 
 
+# 関係ないメソッド
 def fill_img(img, bgr, fat=1):
     img = np.copy(img)
     # target = np.copy(img[10][10])
@@ -26,6 +27,7 @@ def fill_img(img, bgr, fat=1):
     return img
 
 
+# 関係ないメソッド
 def avg_color(img, x1, x2, y1, y2):
     length = (x2 - x1) * (y2 - y1)
     b = np.sum(img[y1:y2, x1:x2, 0]) / length
@@ -33,6 +35,9 @@ def avg_color(img, x1, x2, y1, y2):
     r = np.sum(img[y1:y2, x1:x2, 2]) / length
     return np.array([b, g, r])
 
+
+# 輪郭抽出 cvパワー全開
+# 大きめの画像を抽出して、赤多めか、青多めかでチーム決定してます
 def get_contour(img, team):
     gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
     gaus = cv2.GaussianBlur(gray, (11, 11), 0)
@@ -47,6 +52,7 @@ def get_contour(img, team):
     return team(party, key=lambda x:x[0])[1]
 
 
+# 切り取られたパーティ画像をいい感じに回転させる処理
 def adjast_img(img, team):
     rect = cv2.minAreaRect(get_contour(img, team))
     box = cv2.boxPoints(rect)
@@ -57,12 +63,14 @@ def adjast_img(img, team):
     return result
 
 
+# パーティ画像をまっすぐに回転させて切り取り
 def trimming(img, team):
     img = adjast_img(img, team)
     x, y, w, h = cv2.boundingRect(get_contour(img, team))
     return img[y:y+h, x:x+w]
 
 
+# 画像指定img_pathにパーティの画像
 i = 2
 img_path = "images/sample%d.jpg" %i
 img = cv2.imread(img_path)
@@ -73,8 +81,9 @@ area = orgHeight * orgWidth
 
 magni = 1000 / orgWidth
 img = cv2.resize(img, (int(orgWidth * magni), int(orgHeight * magni)))
-# cv2.imshow("origin%d" %i, img) # show no processed image
-# get_contour(img, red)
+
+# パーティ全体の切り取り
+# trimedにパーティ全体が格納されている
 trimed = trimming(img, red)
 
 h, w = trimed.shape[:2]
@@ -82,12 +91,16 @@ bh = h//7
 th = lambda x: bh + (h - bh) // 3 * x
 nar = 10
 img_size = (100, 100)
+
+# ここからポケモン切り抜き作業
 pokemons = []
 for t in range(3):
     img1 = cv2.resize(trimed[th(t) + nar:th(t+1) - int(nar * 1.5), nar:w//2 - int(nar * 1.5)], img_size)
     img2 = cv2.resize(trimed[th(t) + nar:th(t+1) - int(nar * 1.5), nar + w//2:w - int(nar * 1.5)], img_size)
     pokemons.append(img1)
     pokemons.append(img2)
+# pokemonsに各ポケモンが格納されている
+# 切り抜き終了　以下必要のないコード
 
 min_val = None
 result = None

@@ -51,7 +51,7 @@ def adjast_img(img, team):
     rect = cv2.minAreaRect(get_contour(img, team))
     box = cv2.boxPoints(rect)
     box = sorted(box, key=lambda x: x[1])
-    target = [box[0], box[1]] if np.linalg.norm(box[0] - box[1]) < np.linalg.norm(box[1] - box[2]) else [box[1], box[2]]
+    target = [box[0], box[1]] if np.linalg.norm((box[0] - box[1]).astype(np.float64)) < np.linalg.norm((box[1] - box[2]).astype(np.float64)) else [box[1], box[2]]
     k = math.atan2(target[1][0] - target[0][0], target[1][1] - target[0][1])
     result = ndimage.rotate(img, 90 - math.degrees(k))
     return result
@@ -63,7 +63,7 @@ def trimming(img, team):
     return img[y:y+h, x:x+w]
 
 
-i = 1
+i = 2
 img_path = "images/sample%d.jpg" %i
 img = cv2.imread(img_path)
 
@@ -73,7 +73,7 @@ area = orgHeight * orgWidth
 
 magni = 1000 / orgWidth
 img = cv2.resize(img, (int(orgWidth * magni), int(orgHeight * magni)))
-# cv2.imshow("origin%d" %i, img) // show no processed image
+# cv2.imshow("origin%d" %i, img) # show no processed image
 # get_contour(img, red)
 trimed = trimming(img, red)
 
@@ -95,6 +95,8 @@ result = None
 # target = cv2.cvtColor(target, cv2.COLOR_RGB2GRAY) // gray scale
 pokes = np.load("pokes.npy")
 pokes = [cv2.resize(x, img_size) for x in pokes]
+for i, img in enumerate(pokemons):
+    cv2.imshow("poke%d" %i, img)
 ### target = pokemons[5]
 ### 
 ### flg = False
@@ -153,58 +155,58 @@ pokes = [cv2.resize(x, img_size) for x in pokes]
 # target = fill_img(target, (0, 0, 0), 30)
 # print(target.shape)
 # target = pokes[int(__import__("sys").argv[2])]
-hists = []
-hists_b = []
-hists_r = []
-hists_g = []
-hists_gray = []
-hists_all = []
-
-np.save("origin", np.array(pokemons))
-
-# for i, p in enumerate(pokes):
-target_hist = cv2.calcHist([target], [1], None, [256], [0, 256])
-target_hist_r = cv2.calcHist([target], [0], None, [256], [0, 256])
-target_hist_g = cv2.calcHist([target], [1], None, [256], [0, 256])
-target_hist_b = cv2.calcHist([target], [2], None, [256], [0, 256])
-t_target_hist_r = cv2.calcHist([target], [0], None, [256], [0, 256])
-t_target_hist_g = cv2.calcHist([target], [1], None, [256], [0, 256])
-t_target_hist_b = cv2.calcHist([target], [2], None, [256], [0, 256])
-target_gray = cv2.cvtColor(target, cv2.COLOR_RGB2GRAY)
-target_hist_gray = cv2.calcHist([target_gray], [0], None, [256], [0, 256])
-for i, p in tqdm(list(enumerate(pokes))):
-
-    # target_bgr = avg_color(p, 0, 20, 0, 20)
-    # filled = fill_img(p, target_bgr, 5)
-    # pokemon_hist = cv2.calcHist([filled], [0], None, [256], [0, 256])
-    # target_g = cv2.cvtColor(p, cv2.COLOR_RGB2GRAY)
-    # target_g = cv2.GaussianBlur(target_g, (11, 11), 1)
-    # laped = cv2.Laplacian(target_g, cv2.CV_32F)
-    # _, im01 = cv2.threshold(laped, 10, 1, cv2.THRESH_BINARY)
-    # p = cv2.convertScaleAbs(im01)
-
-    pokemon_hist = cv2.calcHist([p], [1], None, [256], [0, 256])
-    pokemon_hist_r = cv2.calcHist([p], [0], None, [256], [0, 256])
-    pokemon_hist_g = cv2.calcHist([p], [1], None, [256], [0, 256])
-    pokemon_hist_b = cv2.calcHist([p], [2], None, [256], [0, 256])
-    p_gray = cv2.cvtColor(p, cv2.COLOR_RGB2GRAY)
-    pokemon_hist_gray = cv2.calcHist([p], [0], None, [256], [0, 256])
-
-    # pokemon_hist = cv2.calcHist([cv2.cvtColor(p, cv2.COLOR_RGB2GRAY)], [0], None, [256], [0, 256])
-
-    compared = cv2.compareHist(target_hist, pokemon_hist, 0)
-    compared_r = cv2.compareHist(target_hist_r, pokemon_hist_r, 0)
-    compared_g = cv2.compareHist(target_hist_g, pokemon_hist_g, 0)
-    compared_b = cv2.compareHist(target_hist_b, pokemon_hist_b, 0)
-    compared_gray = cv2.compareHist(target_hist_gray, pokemon_hist_gray, 0)
-
-    compared = cv2.compareHist(target_hist, pokemon_hist, 0)
-    hists.append([abs(compared), p, pokemon_hist])
-    hists_r.append([abs(compared_r), p, pokemon_hist_r])
-    hists_g.append([abs(compared_g), p, pokemon_hist_g])
-    hists_b.append([abs(compared_b), p, pokemon_hist_b])
-    hists_gray.append([abs(compared_gray), p, pokemon_hist_gray])
-    hists_all.append([abs(compared_r) + abs(compared_g) + abs(compared_b), p, None])
+###hists = []
+###hists_b = []
+###hists_r = []
+###hists_g = []
+###hists_gray = []
+###hists_all = []
+###
+###np.save("origin", np.array(pokemons))
+###
+#### for i, p in enumerate(pokes):
+###target_hist = cv2.calcHist([target], [1], None, [256], [0, 256])
+###target_hist_r = cv2.calcHist([target], [0], None, [256], [0, 256])
+###target_hist_g = cv2.calcHist([target], [1], None, [256], [0, 256])
+###target_hist_b = cv2.calcHist([target], [2], None, [256], [0, 256])
+###t_target_hist_r = cv2.calcHist([target], [0], None, [256], [0, 256])
+###t_target_hist_g = cv2.calcHist([target], [1], None, [256], [0, 256])
+###t_target_hist_b = cv2.calcHist([target], [2], None, [256], [0, 256])
+###target_gray = cv2.cvtColor(target, cv2.COLOR_RGB2GRAY)
+###target_hist_gray = cv2.calcHist([target_gray], [0], None, [256], [0, 256])
+###for i, p in tqdm(list(enumerate(pokes))):
+###
+###    # target_bgr = avg_color(p, 0, 20, 0, 20)
+###    # filled = fill_img(p, target_bgr, 5)
+###    # pokemon_hist = cv2.calcHist([filled], [0], None, [256], [0, 256])
+###    # target_g = cv2.cvtColor(p, cv2.COLOR_RGB2GRAY)
+###    # target_g = cv2.GaussianBlur(target_g, (11, 11), 1)
+###    # laped = cv2.Laplacian(target_g, cv2.CV_32F)
+###    # _, im01 = cv2.threshold(laped, 10, 1, cv2.THRESH_BINARY)
+###    # p = cv2.convertScaleAbs(im01)
+###
+###    pokemon_hist = cv2.calcHist([p], [1], None, [256], [0, 256])
+###    pokemon_hist_r = cv2.calcHist([p], [0], None, [256], [0, 256])
+###    pokemon_hist_g = cv2.calcHist([p], [1], None, [256], [0, 256])
+###    pokemon_hist_b = cv2.calcHist([p], [2], None, [256], [0, 256])
+###    p_gray = cv2.cvtColor(p, cv2.COLOR_RGB2GRAY)
+###    pokemon_hist_gray = cv2.calcHist([p], [0], None, [256], [0, 256])
+###
+###    # pokemon_hist = cv2.calcHist([cv2.cvtColor(p, cv2.COLOR_RGB2GRAY)], [0], None, [256], [0, 256])
+###
+###    compared = cv2.compareHist(target_hist, pokemon_hist, 0)
+###    compared_r = cv2.compareHist(target_hist_r, pokemon_hist_r, 0)
+###    compared_g = cv2.compareHist(target_hist_g, pokemon_hist_g, 0)
+###    compared_b = cv2.compareHist(target_hist_b, pokemon_hist_b, 0)
+###    compared_gray = cv2.compareHist(target_hist_gray, pokemon_hist_gray, 0)
+###
+###    compared = cv2.compareHist(target_hist, pokemon_hist, 0)
+###    hists.append([abs(compared), p, pokemon_hist])
+###    hists_r.append([abs(compared_r), p, pokemon_hist_r])
+###    hists_g.append([abs(compared_g), p, pokemon_hist_g])
+###    hists_b.append([abs(compared_b), p, pokemon_hist_b])
+###    hists_gray.append([abs(compared_gray), p, pokemon_hist_gray])
+###    hists_all.append([abs(compared_r) + abs(compared_g) + abs(compared_b), p, None])
     # if min_val == None or min_val > abs(compared):
     #     result = p
     #     min_val = abs(compared)
@@ -228,24 +230,24 @@ for i, p in tqdm(list(enumerate(pokes))):
 #     # cv2.imshow("m%d" %i, filled)
 # hists.sort(key=lambda x: x[0], reverse=True)
 # import pylab as plt
-#
-def imcompare(im1, im2):
-    try:
-        bf = cv2.BFMatcher(cv2.NORM_HAMMING)
-        detector = cv2.ORB_create()
-        kp1, des1 = detector.detectAndCompute(im1, None)
-        kp2, des2 = detector.detectAndCompute(im2, None)
-        dists = [x.distance for x in bf.match(des1, des2)]
-        return sum(dists) / len(dists)
-    except:
-        return 10000
-    # out = cv2.drawKeypoints(im01, keypoints, None, None, cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
-
-target_g = cv2.cvtColor(target, cv2.COLOR_RGB2GRAY)
-target_g = cv2.GaussianBlur(target_g, (11, 11), 1)
-laped = cv2.Laplacian(target_g, cv2.CV_32F)
-_, im01 = cv2.threshold(laped, 10, 1, cv2.THRESH_BINARY)
-im01 = cv2.convertScaleAbs(im01)
+###
+###def imcompare(im1, im2):
+###    try:
+###        bf = cv2.BFMatcher(cv2.NORM_HAMMING)
+###        detector = cv2.ORB_create()
+###        kp1, des1 = detector.detectAndCompute(im1, None)
+###        kp2, des2 = detector.detectAndCompute(im2, None)
+###        dists = [x.distance for x in bf.match(des1, des2)]
+###        return sum(dists) / len(dists)
+###    except:
+###        return 10000
+###    # out = cv2.drawKeypoints(im01, keypoints, None, None, cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+###
+###target_g = cv2.cvtColor(target, cv2.COLOR_RGB2GRAY)
+###target_g = cv2.GaussianBlur(target_g, (11, 11), 1)
+###laped = cv2.Laplacian(target_g, cv2.CV_32F)
+###_, im01 = cv2.threshold(laped, 10, 1, cv2.THRESH_BINARY)
+###im01 = cv2.convertScaleAbs(im01)
 # plt.imshow(im01, cmap="gray")
 # plt.show()
 
@@ -307,6 +309,6 @@ im01 = cv2.convertScaleAbs(im01)
 # cv2.imshow("2r", result)
 
 # plt.show()
-# cv2.waitKey()
-import os
-os.system("./killer.sh")
+cv2.waitKey()
+# import os
+# os.system("./killer.sh")

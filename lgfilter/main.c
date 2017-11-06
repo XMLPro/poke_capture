@@ -5,36 +5,6 @@
 #include "lifegame.h"
 #include "image.h"
 
-void print_map(struct game_map* game){
-  for(int i = 0; i < game -> height; i++) {
-    for(int j = 0; j < game -> width; j++) {
-      printf("%d ", game -> cells[i][j].is_alive);
-    }
-    printf("\n");
-  }
-  printf("\n");
-}
-
-void random_spawn(struct game_map* game, int probability) {
-  for(int i = 0; i < game -> height; i++) {
-    for(int j = 0; j < game -> width; j++) {
-      if(rand() % 100 < probability) {
-        game -> cells[i][j].is_alive = true;
-      }
-    }
-  }
-}
-
-void plot(struct bmp_image* bmp, struct game_map* game) {
-  for(int i = 0; i < game -> height; i++) {
-    for(int j = 0; j < game -> width; j++) {
-      game -> cells[i][j].r = bmp -> data[i][j][0];
-      game -> cells[i][j].g = bmp -> data[i][j][1];
-      game -> cells[i][j].b = bmp -> data[i][j][2];
-    }
-  }
-}
-
 int main(int argc, char* argv[]){
   long n;
   if(argc > 1) {
@@ -65,6 +35,7 @@ int main(int argc, char* argv[]){
 
   struct bmp_image bmp;
   load_bmp(&bmp, input_name);
+
   struct game_map game;
   init_game_map(&game, bmp.width, bmp.height);
 
@@ -89,6 +60,6 @@ int main(int argc, char* argv[]){
     }
   }
 
-  write_bmp(&bmp, output_name);
+  /* write_bmp(&bmp, output_name); */
 }
 

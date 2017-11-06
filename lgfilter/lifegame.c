@@ -136,3 +136,23 @@ void next(struct game_map* game) {
   }
   close_cumlative_sum(game, cs);
 }
+
+void random_spawn(struct game_map* game, int probability) {
+  for(int i = 0; i < game -> height; i++) {
+    for(int j = 0; j < game -> width; j++) {
+      if(rand() % 100 < probability) {
+        game -> cells[i][j].is_alive = true;
+      }
+    }
+  }
+}
+
+void plot(struct bmp_image* bmp, struct game_map* game) {
+  for(int i = 0; i < game -> height; i++) {
+    for(int j = 0; j < game -> width; j++) {
+      game -> cells[i][j].r = bmp -> data[i][j][0];
+      game -> cells[i][j].g = bmp -> data[i][j][1];
+      game -> cells[i][j].b = bmp -> data[i][j][2];
+    }
+  }
+}

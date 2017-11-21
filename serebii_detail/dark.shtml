@@ -1,0 +1,1849 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<title>Serebii.net Pok&eacute;dex - Type Listings - Dark</title>
+<meta name="GENERATOR" content="Arachnophilia 4.0">
+<meta name="FORMATTER" content="Arachnophilia 4.0">
+<meta name="keywords" content="Pokemon, Pokédex, Dark, Sun, Moon, Types" />
+<link rel="stylesheet" type="text/css" HREF="/style/dex.css">
+</head>
+
+<meta http-equiv="imagetoolbar" CONTENT="no">
+    <link rel="stylesheet" type="text/css" HREF="/spp-temp.css">
+  <link rel="search" href="/serebii-opensearch.xml" type="application/opensearchdescription+xml" title="Serebii Open Search" />
+   <LINK REL="SHORTCUT ICON" HREF="/favicon.ico">
+
+<BODY  ondragstart="return false"  text=#000000 bottomMargin=0 bgcolor="#383838" 
+leftMargin=0 topMargin=0 rightMargin=0>
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" height="1" background="/BannerBg.jpg">
+      <tr>
+        <td width="100%" background="/BannerBg.jpg" height="1">
+    <div align="center">
+    <font color="#000000">
+    <img border="0" src="/Banner.jpg"></font></td>
+      </tr>
+    </table>
+    <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" height="1">
+      <tr>
+        <td width="95%" height="1" colspan="3" bgcolor="#507C36" bordercolor="#111111">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="1">
+			<td colspan="2" height="1">
+        <div id="menu"><b>Quick Links -</b> <a href="/index2.shtml">Home</a> - <a href="http://www.serebiiforums.com/" target="blank">Forums</a> - <a href="mailto:webmaster@serebii.net">Contact</a> - <a href="/discord.shtml">Discord</a> - <a href="/pokedex-gs">GSC Pokédex</a> - <a href="/pokedex-sm">SM Pokédex</a> - <a href="/pokearth">Pokéarth</a></div></td>
+<td align="right" width="300" height="1">
+<div id="menu">  <form id="searchbox_018410473690156091934:6gahkiyodbi" action="/search.shtml" style="margin:0px;">
+    <input type="hidden" name="cx" value="018410473690156091934:6gahkiyodbi" />
+    <input type="hidden" name="cof" value="FORID:11" />
+    <input name="q" type="text" size="20" />
+    <input type="submit" name="sa" value="Search" />
+  </form>
+  <script type="text/javascript" src="//www.google.com/coop/cse/brand?form=searchbox_018410473690156091934%3A6gahkiyodbi"></script>
+</div>
+</td>
+</tr>
+</table>
+</td>
+      </tr>
+
+
+<tr>
+<td width="1%" height="362" valign="top" bgcolor="#507C36" bordercolor="#111111">
+<div id="menu"><img src="/Toolbar/headers/SPP.gif" width="140" height="27"></a><br />
+<a href="/index2.shtml">News</a><br />
+<a href="/archive.shtml">Archived news</a><br />
+<a href="/pokedex/">RBY Pokédex</a><br />
+<a href="/pokedex-gs/">GSC Pokédex</a><br />
+<a href="/pokedex-rs/">R/S/C/FR/LG/E Pokédex</a><br />
+<a href="/pokedex-dp/">DPtHGSS Pokédex</a><br />
+<a href="/pokedex-bw/">Black/White Pokédex</a><br />
+<a href="/pokedex-xy/">XY & ORAS Pokédex</a><br />
+<a href="/pokedex-sm/">Sun & Moon Pokédex</a><br />
+<a href="/attackdex/">Attackdex</a><br />
+<a href="/attackdex-dp/">Attackdex DPPt</a><br />
+<a href="/attackdex-bw/">Attackdex BW</a><br />
+<a href="/attackdex-xy/">Attackdex XY</a><br />
+<a href="/attackdex-sm/">Attackdex SM</a><br />
+<a href="/itemdex/">ItemDex</a><br />
+<a href="/pokearth/">Pokéarth</a><br />
+<a href="/abilitydex/">Abilitydex</a><br />
+<a href="/itemdex/list/berry.shtml">Berrydex</a><br />
+<a href="/spindex/">Spin-Off Pokédex</a><br />
+<a href="/spindex-dp/">Spin-Off Pokédex DP</a><br />
+<a href="/spindex-bw/">Spin-Off Pokédex BW</a><br />
+<a href="/card/dex/">Cardex</a><br />
+<a href="/games/mechanics.shtml">Game Mechanics</a><br />
+<a href="/games/iv-calcsm.shtml">-Sun/Moon IV Calc.</a><br />
+<a href="/potw-sm">Pokémon of the Week</a><br />
+<a href="/potw-sm/">-7th Gen </a><br />
+<a href="/potw-xy/">-6th Gen </a><br />
+<a href="http://www.serebiiforums.com" target="blank">Forums</a><br />
+<a href="/chat.shtml">Chat</a><br />
+<a href="/chat-wifi.shtml">WiFi Chat</a><br />
+<a href="/games/currentevents.shtml">Current & Upcoming Events</a><br />
+<a href="/events">Event Database</a><br />
+<a href="/sunmoon/pokemon.shtml">7th Generation Pokémon</a><br />
+<a href="/ultrasunultramoon/pokemon.shtml">-New Pokémon</a><br />
+<a href="/ultrasunultramoon/forms.shtml">-Ultra Sun/Ultra Moon Forms</a><br />
+<a href="/anime/"><img src="/Toolbar/headers/Anime.gif" border="0" width="140" height="27"></a><br />
+<a href="/anime/epiguide/">Episode Listings & Pictures</a><br />
+<a href="/anime/dex/">AniméDex</a><br />
+<a href="/anime/characters/">Character Bios</a><br />
+<a href="/anime/epiguide/indigo/">The Indigo League</a><br />
+<a href="/anime/epiguide/orange/">The Orange League</a><br />
+<a href="/anime/epiguide/johto/">The Johto Saga</a><br />
+<a href="/anime/epiguide/houen/">The Saga in Hoenn!</a><br />
+<a href="/anime/epiguide/kanto/">Kanto Battle Frontier Saga!</a><br />
+<a href="/anime/epiguide/shinou/">The Sinnoh Saga!</a><br />
+<a href="/anime/epiguide/bestwishes/">Best Wishes - Unova Saga</a><br />
+<a href="/anime/epiguide/xy/">XY - Kalos Saga</a><br />
+<a href="/anime/epiguide/sunmoon/">Sun & Moon - Alola Saga</a><br />
+<a href="/anime/epiguide/chronicles/">Pokémon Chronicles</a><br />
+<a href="/anime/epiguide/generations/">Pokémon Generations</a><br />
+<a href="/anime/epiguide/specials/">The Special Episodes</a><br />
+<a href="/anime/banned.shtml">The Banned Episodes</a><br />
+<a href="/anime/shiny/">Shiny Pokémon</a><br />
+<a href="/anime/movies/">Movies In Anime</a><br />
+<a href="/anime/dvd/">DVD Listings</a><br />
+<a href="/anime/gba/">GBA Video Listings</a><br />
+
+<a href="/games/"></a><img src="/Toolbar/headers/Games.gif" border="0" width="140" height="27"></b></a><br />
+<a href="/pokemonswitch/">Pokémon Switch</a><br />
+<a href="/pokemon/generation7.shtml"><b>Gen VII</b></a><br />
+<a href="/sunmoon/">Sun & Moon</a><br />
+<a href="/ultrasunultramoon/">Ultra Sun & Ultra Moon</a><br />
+<a href="/magikarpjump/">Pokémon: Magikarp Jump</a><br />
+<a href="/pokeland/">PokéLand</a><br />
+<a href="/pokkendx/">Pokkén Tournament DX</a><br />
+<a href="/pokemon/generation6.shtml"><b>Gen VI</b></a><br />
+<a href="/xy/">X & Y</a><br />
+<a href="/omegarubyalphasapphire/">Omega Ruby & Alpha Sapphire</a><br />
+<a href="/bank/">Pokémon Bank</a><br />
+<a href="/battletrozei/">Pokémon Battle Trozei<br />Pokémon Link: Battle</a><br />
+<a href="/artacademy/">Pokémon Art Academy</a><br />
+<a href="/bandofthieves/">The Band of Thieves & 1000 Pokémon</a><br />
+<a href="/shuffle/">Pokémon Shuffle</a><br />
+<a href="/rumbleworld/">Pokémon Rumble World</a><br />
+<a href="/supermysterydungeon/">Pokémon Super Mystery Dungeon</a><br />
+<a href="/picross/">Pokémon Picross</a><br />
+<a href="/detective/">Detective Pikachu ~ Birth of a New Duo~</a><br />
+<a href="/pokken/">Pokkén Tournament</a><br />
+<a href="/duel/">Pokémon Duel</a><br />
+<a href="/pokemongo/">Pokémon GO</a><br />
+<a href="/smashbros3dswiiu/">Smash Bros for 3DS/Wii U</a><br />
+<a href="/games/badge/">Nintendo Badge Arcade</a><br />
+<a href="/pokemon/generation5.shtml"><b>Gen V</b></a><br />
+<a href="/blackwhite/">Black & White</a><br />
+<a href="/black2white2/">Black 2 & White 2</a><br />
+<a href="/dreamradar/">Pokémon Dream Radar</a><br />
+<a href="/trettalab/">Pokémon Tretta Lab</a><br />
+<a href="/rumbleu/">Pokémon Rumble U</a><br />
+<a href="/dungeoninfinity/">Mystery Dungeon: Gates to Infinity</a><br />
+<a href="/conquest/">Pokémon Conquest</a><br />
+<a href="/pokepark2/">PokéPark 2: Wonders Beyond</a><br />
+<a href="/rumble2/">Pokémon Rumble Blast</a><br />
+<a href="/pokedex3d/">Pokédex 3D</a><br />
+<a href="/pokedex3dpro/">Pokédex 3D Pro</a><br />
+<a href="/typingds/">Learn With Pokémon: Typing Adventure</a><br />
+<a href="/card/howtoplayds/">TCG How to Play DS</a><br />
+<a href="/pokedexios/">Pokédex for iOS</a><br />
+<a href="/pokemon/generation4.shtml"><b>Gen IV</b></a><br />
+<a href="/diamondpearl/">Diamond & Pearl</a><br />
+<a href="/platinum/">Platinum</a><br />
+<a href="/heartgoldsoulsilver/">Heart Gold & Soul Silver</a><br />
+<a href="/ranger3/">Pokémon Ranger: Guardian Signs</a><br />
+<a href="/melee/">Pokémon Rumble</a><br />
+<a href="/dungeon3/">Mystery Dungeon: Blazing, Stormy & Light Adventure Squad</a><br />
+<a href="/pokepark/">PokéPark Wii - Pikachu's  Adventure</a><br />
+<a href="/battle/">Pokémon Battle Revolution</a><br />
+<a href="/dungeonsky/">Mystery Dungeon - Explorers of Sky</a><br />
+<a href="/ranger2/">Pokémon Ranger: Shadows of Almia</a><br />
+<a href="/dungeon2/">Mystery Dungeon - Explorers of Time & Darkness</a><br />
+<a href="/ranch/">My Pokémon Ranch</a><br />
+<a href="/battrio/">Pokémon Battrio</a><br />
+<a href="/ssbb/">Smash Bros Brawl</a><br />
+<a href="/pokemon/generation3.shtml"><b>Gen III</b></a><br />
+<a href="/rubysapphire/">Ruby & Sapphire</a><br />
+<a href="/fireredleafgreen/">Fire Red & Leaf Green</a><br />
+<a href="/emerald/">Emerald</a><br />
+<a href="/colosseum/">Pokémon Colosseum</a><br />
+<a href="/xd/">Pokémon XD: Gale of Darkness</a><br />
+<a href="/dash/">Pokémon Dash</a><br />
+<a href="/pokemon_channel/">Pokémon Channel</a><br />
+<a href="/pokemon_box/">Pokémon Box: RS</a><br />
+<a href="/pinball_rs/">Pokémon Pinball RS</a><br />
+<a href="/ranger/">Pokémon Ranger</a><br />
+<a href="/mysteriousdungeon/">Mystery Dungeon Red & Blue</a><br />
+<a href="/torouze/">PokémonTrozei</a><br />
+<a href="/pikachu/">Pikachu DS Tech Demo</a><br />
+<a href="/pokeparkfish/">PokéPark Fishing Rally</a><br />
+<a href="/e-reader/">The E-Reader</a><br />
+<a href="/pokemate/">PokéMate</a><br />
+<a href="/pokemon/generation2.shtml"><b>Gen II</b></a><br />
+<a href="/gs/">Gold/Silver</a><br />
+<a href="/crystal/">Crystal</a><br />
+<a href="/stadium2/">Pokémon Stadium 2</a><br />
+<a href="/puzzlechallenge/">Pokémon Puzzle Challenge</a><br />
+<a href="/mini/">Pokémon Mini</a><br />
+<a href="/smash_bros_2/">Super Smash Bros. Melee</a><br />
+<a href="/pokemon/generation1.shtml"><b>Gen I</b></a><br />
+<a href="/rb/">Red, Blue & Green</a><br />
+<a href="/yellow/">Yellow</a><br />
+<a href="/puzzleleague/">Pokémon Puzzle League</a><br />
+<a href="/snap/">Pokémon Snap</a><br />
+<a href="/pinball/">Pokémon Pinball </a><br />
+<a href="/stadiumjp/">Pokémon Stadium (Japanese)</a><br />
+<a href="/stadium/">Pokémon Stadium </a><br />
+<a href="/tradingcardgamegb/">Pokémon Trading Card Game GB </a><br />
+<a href="/smash_bros/">Super Smash Bros. </a><br />
+<b>Miscellaneous</b><br />
+<a href="/games/mechanics.shtml">Game Mechanics</a><br />
+<a href="/vgc">Video Game Championships</a><br />
+<a href="/games/others.shtml">In Other Games </a><br />
+<a href="/games/virtualconsole.shtml">Virtual Console </a><br />
+<a href="/games/consoles.shtml">Special Edition Consoles </a><br />
+<a href="/games/themes.shtml">Pokémon 3DS Themes</a><br />
+<a href="/apps">Smartphone & Tablet Apps </a><br />
+<a href="/amiibo">amiibo</a><br />
+
+<a href="/manga/"><img src="/Toolbar/headers/Manga.gif" border="0" width="140" height="27"></a><br />
+<a href="/manga/">General Information</a><br />
+<a href="/manga/dex">MangaDex</a><br />
+<a href="/manga/characters">Character BIOs</a><br />
+<a href="/manga/characters-new">Detailed BIOs</a><br />
+<a href="/manga/chapter.shtml">Chapter Guides</a><br />
+<a href="/manga/volume.shtml">Volume Guides</a><br />
+<a href="/manga/rby/">RBG Series</a><br />
+<a href="/manga/yellow/">Yellow Series</a><br />
+<a href="/manga/gsc/">GSC Series</a><br />
+<a href="/manga/rs/">RS Series</a><br />
+<a href="/manga/frlg/">FRLG Series</a><br />
+<a href="/manga/bf/">Emerald Series</a><br />
+<a href="/manga/dp/">DP Series</a><br />
+<a href="/manga/pt/">Platinum Series</a><br />
+<a href="/manga/hgss/">HGSS Series</a><br />
+<a href="/manga/bw/">BW Series</a><br />
+<a href="/manga/b2w2/">B2W2 Series</a><br />
+<a href="/manga/xy/">XY Series</a><br />
+<a href="/manga/oras/">ORAS Series</a><br />
+<a href="/manga/sunmoon/">SM Series</a><br />
+
+<a href="/movies/"><img src="/Toolbar/headers/Movies.gif" border="0" width="140" height="27"></a><br />
+<a href="/movies/mewtwo/origin/">The Origin of Mewtwo </a><br />
+<a href="/movies/mewtwo/">Mewtwo Strikes Back </a><br />
+<a href="/movies/lugia/">The Power of One </a><br />
+<a href="/movies/entei/">Spell Of The Unown </a><br />
+<a href="/anime/epiguide/specials/002.shtml">Mewtwo Returns </a><br />
+<a href="/movies/serebii/">Celebi: Voice of the Forest</a><br />
+<a href="/movies/latias_latios/">Pokémon Heroes</a><br />
+<a href="/movies/jirachi/">Jirachi - Wish Maker</a><br />
+<a href="/movies/deoxys/">Destiny Deoxys!</a><br />
+<a href="/movies/mew/">Lucario and the Mystery of Mew!</a><br />
+<a href="/movies/kyogre/">Pokémon Ranger & The Temple of the Sea!</a><br />
+<a href="/movies/dp/">The Rise of Darkrai!</a><br />
+<a href="/movies/giratina/">Giratina & The Sky Warrior!</a><br />
+<a href="/movies/arceus/">Arceus and the Jewel of Life</a><br />
+<a href="/movies/celebi/">Zoroark - Master of Illusions</a><br />
+<a href="/movies/victini/">Black: Victini & Reshiram<br />White: Victini & Zekrom</a><br />
+<a href="/movies/kyurem/">Kyurem VS The Sword of Justice</a><br />
+<a href="/movies/meloetta/">-Meloetta's Midnight Serenade</a><br />
+<a href="/movies/genesect/">Genesect and the Legend Awakened</a><br />
+<a href="/movies/xy/">Diancie & The Cocoon of Destruction</a><br />
+<a href="/movies/hoopa/">Hoopa & The Clash of Ages</a><br />
+<a href="/movies/volcanion/">Volcanion and the Mechanical Marvel</a><br />
+<a href="/movies/pokemon20/">Pokémon I Choose You!</a><br />
+
+<a href="/movies/"><img src="/Toolbar/headers/PikachuShorts.gif" border="0" width="140" height="27"></a><br />
+<a href="/movies/pikachu1/">Pikachu's Summer Vacation</a><br />
+<a href="/movies/pikachu2/">Pikachu's Rescue Adventure</a><br />
+<a href="/movies/pikachu3/">Pikachu And Pichu </a><br />
+<a href="/movies/pikachu4/">Pikachu's PikaBoo </a><br />
+<a href="/movies/pikachu5/">Camp Pikachu!</a><br />
+<a href="/movies/pikachu6/">Gotta Dance!!</a><br />
+<a href="/movies/pikachu7/">Pikachu's Summer Festival!</a><br />
+<a href="/movies/pikachu8/">Pikachu's Ghost Festival!</a><br />
+<a href="/movies/pikachu9/">Pikachu's Island Adventure!</a><br />
+<a href="/movies/pikachu10/">Pikachu's Exploration Club</a><br />
+<a href="/movies/pikachu11/">Pikachu's Great Ice Adventure</a><br />
+<a href="/movies/pikachu12/">Pikachu's Sparkling Search</a><br />
+<a href="/movies/pikachu13/">Pikachu's Really Mysterious Adventure</a><br />
+<a href="/movies/eevee/">Eevee & Friends</a><br />
+<a href="/movies/klefki/">Pikachu, What's This Key?</a><br />
+<a href="/movies/pikachumusic/">Pikachu & The Pokémon Music Squad</a><br />
+<a href="/anime/epiguide/pwv/">The Pikachu's Winter Vacations</a><br />
+
+<img src="/Toolbar/headers/TradingCards.gif" border="0" width="140" height="27"></a><br />
+<a href="/card/dex/">Cardex</a><br /> 
+<a href="/card/dex/extra">-Extra Pokémon Types</a><br /> 
+<a href="/card/dex/trainers">Trainer Cards</a><br /> 
+<a href="/card/dex/energy">Energy Cards</a><br /> 
+<a href="/card/dex/extra/altart.shtml">Alternate Art Cards</a><br /> 
+<a href="/card/english.shtml">English Sets</a><br /> 
+<a href="/card/shininglegends">-Shining Legends</a><br /> 
+<a href="/card/burningshadows">-Burning Shadows</a><br /> 
+<a href="/card/guardiansrising">-Guardians Rising</a><br /> 
+<a href="/card/sunmoon">-Sun & Moon</a><br /> 
+<a href="/card/evolutions">-XY Evolutions</a><br /> 
+<a href="/card/steamsiege">-XY Steam Siege</a><br /> 
+<a href="/card/fatescollide">-XY Fates Collide</a><br /> 
+<a href="/card/generations">-Generations</a><br /> 
+<a href="/card/dpt.shtml">-DPtHS Series</a><br /> 
+<a href="/card/ex.shtml">-EX Series</a><br /> 
+<a href="/card/neo.shtml">-Neo/eSeries</a><br /> 
+<a href="/card/first.shtml">-First Gen Series</a><br /> 
+<a href="/card/engpromo.shtml">English Promos</a><br /> 
+<a href="/card/xypromos">-XY Promos</a><br /> 
+<a href="/card/bwpromos">-BW Promos</a><br /> 
+<a href="/card/hgsspromo">-HGSS Promo</a><br /> 
+<a href="/card/popseries.shtml">-POP Series</a><br /> 
+<a href="/card/japanese.shtml">Japanese Sets</a><br /> 
+<a href="/card/shininglegend">-Shining Legend</a><br />
+<a href="/card/beyondanewchallenge">-Beyond A New Challenge</a><br /> <a href="/card/alolanmoonlight">-Alolan Moonlight</a><br /> 
+<a href="/card/islandsawaityou">-Islands Await You</a><br /> 
+<a href="/card/collectionsun">-Collection Sun</a><br /> 
+<a href="/card/collectionmoon">-Collection Moon</a><br /> 
+<a href="/card/thebestofxy">-The Best of XY</a><br /> 
+<a href="/card/vs">-Pokémon VS</a><br /> 
+<a href="/card/jppromo.shtml">Japanese Promos</a><br /> 
+<a href="/card/smpromo">-SM Promos</a><br /> 
+<a href="/card/xypromo">-XY Promos</a><br /> 
+</div>
+</td>
+<td width="99%" height="362" valign="top" bordercolor="#111111">
+<font face="Verdana" size="1" color="#FFFFFF"><div align="center"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Serebii.net Top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4807457957392508"
+     data-ad-slot="8006881961"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><br />
+
+
+<table class="dextab">
+      <tr >
+	<td width="16%" class="curr"><a href="/pokedex-sm/dark.shtml">Gen VII Dex</td>
+	<td width="16%" class="pkmn"><a href="/pokedex-xy/dark.shtml">Gen VI Dex</td>
+	
+<td width="16%" class="pkmn"><a href="/pokedex-bw/dark.shtml">Gen V Dex</td>	<td width="16%" class="pkmn"><a href="/pokedex-dp/dark.shtml">Gen IV Dex</td>	<td width="16%" class="pkmn"><a href="/pokedex-rs/dark.shtml">Gen III Dex</td>	<td width="16%" class="pkmn"><a href="/pokedex-gs/dark.shtml">Gen II Dex</td>  </tr></table><p>
+<div align="center"><table border="0" cellspacing="0" cellpadding="4">
+	<tr>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/bug.shtml"><img src="/pokedex-bw/type/bug.gif" border=0 alt="Bug"></a>	
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border=0 alt="Dark"></a>	
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/dragon.shtml"><img src="/pokedex-bw/type/dragon.gif" border=0 alt="Dragon"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/electric.shtml"><img src="/pokedex-bw/type/electric.gif" border=0 alt="Electric"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/fairy.shtml"><img src="/pokedex-bw/type/fairy.gif" border=0 alt="Fighting"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/fighting.shtml"><img src="/pokedex-bw/type/fighting.gif" border=0 alt="Fighting"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/fire.shtml"><img src="/pokedex-bw/type/fire.gif" border=0 alt="Fire"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/flying.shtml"><img src="/pokedex-bw/type/flying.gif" border=0 alt="Flying"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/ghost.shtml"><img src="/pokedex-bw/type/ghost.gif" border=0 alt="Ghost"></a>
+		</td>
+	</tr>
+	<tr>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/grass.shtml"><img src="/pokedex-bw/type/grass.gif" border=0 alt="Grass"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/ground.shtml"><img src="/pokedex-bw/type/ground.gif" border=0 alt="Ground"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/ice.shtml"><img src="/pokedex-bw/type/ice.gif" border=0 alt="Ice"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/normal.shtml"><img src="/pokedex-bw/type/normal.gif" border=0 alt="Normal"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/poison.shtml"><img src="/pokedex-bw/type/poison.gif" border=0 alt="Poison"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/psychic.shtml"><img src="/pokedex-bw/type/psychic.gif" border=0 alt="Psychic"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/rock.shtml"><img src="/pokedex-bw/type/rock.gif" border=0 alt="Rock"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/steel.shtml"><img src="/pokedex-bw/type/steel.gif" border=0 alt="Steel"></a>
+		</td>
+		<td width="32" align="center">
+		<a href="/pokedex-sm/water.shtml"><img src="/pokedex-bw/type/water.gif" border=0 alt="Water"></a>
+		</td>
+	</tr>
+</table></div><P>
+
+
+<p>The Pokémon below are the Pokémon of the Dark-type.</p><table class="dextable" align="center">
+	<tr>
+		<td align="center" class="fooevo" rowspan="2">
+		No.
+		</td>
+		<td  align="center" width="32" class="fooevo"  rowspan="2">
+		Pic	
+		</td>
+		<td  align="center" class="fooevo" rowspan="2">
+		Name	
+		</td>
+		<td  align="center" class="fooevo" rowspan="2">
+		Type	
+		</td>
+		<td  align="center" class="fooevo" rowspan="2" width="10%">
+		Abilities	
+		</td>
+		<td  align="center" class="fooevo" colspan="6" width="10%">
+		Base Stats	
+		</td>
+	</tr>
+	<tr>
+		<td align="center" class="fooevo">HP</td>
+		<td align="center" class="fooevo">Att</td>
+		<td align="center" class="fooevo">Def</td>
+		<td align="center" class="fooevo">S.Att</td>
+		<td align="center" class="fooevo">S.Def</td>
+		<td align="center" class="fooevo">Spd</td>
+	</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#019
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/019.shtml"><img src="/pokedex-sm/icon/019-a.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/019.shtml">Rattata</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/normal.shtml"><img src="/pokedex-bw/type/normal.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/gluttony.shtml">Gluttony</a> <br /><a href="/abilitydex/hustle.shtml">Hustle</a> <br /><a href="/abilitydex/thickfat.shtml">Thick Fat</a></td>
+		<td align="center" class="fooinfo">30</td>
+<td align="center" class="fooinfo">56</td>
+<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">25</td>
+<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">72</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#020
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/020.shtml"><img src="/pokedex-sm/icon/020-a.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/020.shtml">Raticate</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/normal.shtml"><img src="/pokedex-bw/type/normal.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/gluttony.shtml">Gluttony</a> <br /><a href="/abilitydex/hustle.shtml">Hustle</a> <br /><a href="/abilitydex/thickfat.shtml">Thick Fat</a></td>
+		<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">71</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">80</td>
+<td align="center" class="fooinfo">77</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#052
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/052.shtml"><img src="/pokedex-sm/icon/052-a.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/052.shtml">Meowth</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/pickup.shtml">Pickup</a> <br /><a href="/abilitydex/technician.shtml">Technician</a> <br /><a href="/abilitydex/rattled.shtml">Rattled</a></td>
+		<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">90</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#053
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/053.shtml"><img src="/pokedex-sm/icon/053-a.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/053.shtml">Persian</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/furcoat.shtml">Fur Coat</a> <br /><a href="/abilitydex/technician.shtml">Technician</a> <br /><a href="/abilitydex/rattled.shtml">Rattled</a></td>
+		<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">115</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#088
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/088.shtml"><img src="/pokedex-sm/icon/088-a.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/088.shtml">Grimer</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/poison.shtml"><img src="/pokedex-bw/type/poison.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/poisontouch.shtml">Poison Touch</a> <br /><a href="/abilitydex/gluttony.shtml">Gluttony</a> <br /><a href="/abilitydex/powerofalchemy.shtml">Power of Alchemy</a></td>
+		<td align="center" class="fooinfo">80</td>
+<td align="center" class="fooinfo">80</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">25</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#089
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/089.shtml"><img src="/pokedex-sm/icon/089-a.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/089.shtml">Muk</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/poison.shtml"><img src="/pokedex-bw/type/poison.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/poisontouch.shtml">Poison Touch</a> <br /><a href="/abilitydex/gluttony.shtml">Gluttony</a> <br /><a href="/abilitydex/powerofalchemy.shtml">Power of Alchemy</a></td>
+		<td align="center" class="fooinfo">105</td>
+<td align="center" class="fooinfo">105</td>
+<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">100</td>
+<td align="center" class="fooinfo">50</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#130
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/130.shtml"><img src="/pokedex-sm/icon/130-m.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/130.shtml">Gyarados</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/water.shtml"><img src="/pokedex-bw/type/water.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/moldbreaker.shtml">Mold Breaker</a> </td>
+		<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">155</td>
+<td align="center" class="fooinfo">109</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">130</td>
+<td align="center" class="fooinfo">81</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#197
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/197.shtml"><img src="/pokedex-sm/icon/197.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/197.shtml">Umbreon</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/synchronize.shtml">Synchronize</a> <br /><a href="/abilitydex/innerfocus.shtml">Inner Focus</a></td>
+		<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">110</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">130</td>
+<td align="center" class="fooinfo">65</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#198
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/198.shtml"><img src="/pokedex-sm/icon/198.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/198.shtml">Murkrow</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/flying.shtml"><img src="/pokedex-bw/type/flying.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/insomnia.shtml">Insomnia</a> <br /><a href="/abilitydex/superluck.shtml">Super Luck</a> <br /><a href="/abilitydex/prankster.shtml">Prankster</a></td>
+		<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">85</td>
+<td align="center" class="fooinfo">42</td>
+<td align="center" class="fooinfo">85</td>
+<td align="center" class="fooinfo">42</td>
+<td align="center" class="fooinfo">91</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#215
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/215.shtml"><img src="/pokedex-sm/icon/215.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/215.shtml">Sneasel</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/ice.shtml"><img src="/pokedex-bw/type/ice.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/innerfocus.shtml">Inner Focus</a> <br /><a href="/abilitydex/keeneye.shtml">Keen Eye</a> <br /><a href="/abilitydex/pickpocket.shtml">Pickpocket</a></td>
+		<td align="center" class="fooinfo">55</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">55</td>
+<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">115</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#228
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/228.shtml"><img src="/pokedex-sm/icon/228.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/228.shtml">Houndour</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/fire.shtml"><img src="/pokedex-bw/type/fire.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/earlybird.shtml">Early Bird</a> <br /><a href="/abilitydex/flashfire.shtml">Flash Fire</a> <br /><a href="/abilitydex/unnerve.shtml">Unnerve</a></td>
+		<td align="center" class="fooinfo">45</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">30</td>
+<td align="center" class="fooinfo">80</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">65</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#229
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/229.shtml"><img src="/pokedex-sm/icon/229.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/229.shtml">Houndoom</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/fire.shtml"><img src="/pokedex-bw/type/fire.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/earlybird.shtml">Early Bird</a> <br /><a href="/abilitydex/flashfire.shtml">Flash Fire</a> <br /><a href="/abilitydex/unnerve.shtml">Unnerve</a></td>
+		<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">110</td>
+<td align="center" class="fooinfo">80</td>
+<td align="center" class="fooinfo">95</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#229
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/229.shtml"><img src="/pokedex-sm/icon/229-m.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/229.shtml">Houndoom</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/fire.shtml"><img src="/pokedex-bw/type/fire.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/solarpower.shtml">Solar Power</a> </td>
+		<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">140</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">115</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#248
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/248.shtml"><img src="/pokedex-sm/icon/248.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/248.shtml">Tyranitar</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/rock.shtml"><img src="/pokedex-bw/type/rock.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/sandstream.shtml">Sand Stream</a> <br /><a href="/abilitydex/unnerve.shtml">Unnerve</a></td>
+		<td align="center" class="fooinfo">100</td>
+<td align="center" class="fooinfo">134</td>
+<td align="center" class="fooinfo">110</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">100</td>
+<td align="center" class="fooinfo">61</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#248
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/248.shtml"><img src="/pokedex-sm/icon/248-m.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/248.shtml">Tyranitar</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/rock.shtml"><img src="/pokedex-bw/type/rock.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/sandstream.shtml">Sand Stream</a> </td>
+		<td align="center" class="fooinfo">100</td>
+<td align="center" class="fooinfo">164</td>
+<td align="center" class="fooinfo">150</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">120</td>
+<td align="center" class="fooinfo">71</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#261
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/261.shtml"><img src="/pokedex-sm/icon/261.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/261.shtml">Poochyena</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/runaway.shtml">Run Away</a> <br /><a href="/abilitydex/quickfeet.shtml">Quick Feet</a> <br /><a href="/abilitydex/rattled.shtml">Rattled</a></td>
+		<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">55</td>
+<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">30</td>
+<td align="center" class="fooinfo">30</td>
+<td align="center" class="fooinfo">35</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#262
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/262.shtml"><img src="/pokedex-sm/icon/262.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/262.shtml">Mightyena</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/intimidate.shtml">Intimidate</a> <br /><a href="/abilitydex/quickfeet.shtml">Quick Feet</a> <br /><a href="/abilitydex/moxie.shtml">Moxie</a></td>
+		<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">70</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#274
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/274.shtml"><img src="/pokedex-sm/icon/274.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/274.shtml">Nuzleaf</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/grass.shtml"><img src="/pokedex-bw/type/grass.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/chlorophyll.shtml">Chlorophyll</a> <br /><a href="/abilitydex/earlybird.shtml">Early Bird</a> <br /><a href="/abilitydex/pickpocket.shtml">Pickpocket</a></td>
+		<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">60</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#275
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/275.shtml"><img src="/pokedex-sm/icon/275.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/275.shtml">Shiftry</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/grass.shtml"><img src="/pokedex-bw/type/grass.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/chlorophyll.shtml">Chlorophyll</a> <br /><a href="/abilitydex/earlybird.shtml">Early Bird</a> <br /><a href="/abilitydex/pickpocket.shtml">Pickpocket</a></td>
+		<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">100</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">80</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#302
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/302.shtml"><img src="/pokedex-sm/icon/302.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/302.shtml">Sableye</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/ghost.shtml"><img src="/pokedex-bw/type/ghost.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/keeneye.shtml">Keen Eye</a> <br /><a href="/abilitydex/stall.shtml">Stall</a> <br /><a href="/abilitydex/prankster.shtml">Prankster</a></td>
+		<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">50</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#302
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/302.shtml"><img src="/pokedex-sm/icon/302-m.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/302.shtml">Sableye</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/ghost.shtml"><img src="/pokedex-bw/type/ghost.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/magicbounce.shtml">Magic Bounce</a> </td>
+		<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">85</td>
+<td align="center" class="fooinfo">125</td>
+<td align="center" class="fooinfo">85</td>
+<td align="center" class="fooinfo">115</td>
+<td align="center" class="fooinfo">20</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#318
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/318.shtml"><img src="/pokedex-sm/icon/318.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/318.shtml">Carvanha</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/water.shtml"><img src="/pokedex-bw/type/water.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/roughskin.shtml">Rough Skin</a> <br /><a href="/abilitydex/speedboost.shtml">Speed Boost</a></td>
+		<td align="center" class="fooinfo">45</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">20</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">20</td>
+<td align="center" class="fooinfo">65</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#319
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/319.shtml"><img src="/pokedex-sm/icon/319.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/319.shtml">Sharpedo</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/water.shtml"><img src="/pokedex-bw/type/water.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/roughskin.shtml">Rough Skin</a> <br /><a href="/abilitydex/speedboost.shtml">Speed Boost</a></td>
+		<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">120</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">95</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#319
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/319.shtml"><img src="/pokedex-sm/icon/319-m.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/319.shtml">Sharpedo</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/water.shtml"><img src="/pokedex-bw/type/water.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/strongjaw.shtml">Strong Jaw</a> </td>
+		<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">140</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">110</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">105</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#332
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/332.shtml"><img src="/pokedex-sm/icon/332.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/332.shtml">Cacturne</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/grass.shtml"><img src="/pokedex-bw/type/grass.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/sandveil.shtml">Sand Veil</a> <br /><a href="/abilitydex/waterabsorb.shtml">Water Absorb</a></td>
+		<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">115</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">115</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">55</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#342
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/342.shtml"><img src="/pokedex-sm/icon/342.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/342.shtml">Crawdaunt</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/water.shtml"><img src="/pokedex-bw/type/water.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/hypercutter.shtml">Hyper Cutter</a> <br /><a href="/abilitydex/shellarmor.shtml">Shell Armor</a> <br /><a href="/abilitydex/adaptability.shtml">Adaptability</a></td>
+		<td align="center" class="fooinfo">63</td>
+<td align="center" class="fooinfo">120</td>
+<td align="center" class="fooinfo">85</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">55</td>
+<td align="center" class="fooinfo">55</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#359
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/359.shtml"><img src="/pokedex-sm/icon/359.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/359.shtml">Absol</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/pressure.shtml">Pressure</a> <br /><a href="/abilitydex/superluck.shtml">Super Luck</a> <br /><a href="/abilitydex/justified.shtml">Justified</a></td>
+		<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">130</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">75</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#359
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/359.shtml"><img src="/pokedex-sm/icon/359-m.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/359.shtml">Absol</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/magicbounce.shtml">Magic Bounce</a> </td>
+		<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">150</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">115</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">115</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#430
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/430.shtml"><img src="/pokedex-sm/icon/430.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/430.shtml">Honchkrow</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/flying.shtml"><img src="/pokedex-bw/type/flying.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/insomnia.shtml">Insomnia</a> <br /><a href="/abilitydex/superluck.shtml">Super Luck</a> <br /><a href="/abilitydex/moxie.shtml">Moxie</a></td>
+		<td align="center" class="fooinfo">100</td>
+<td align="center" class="fooinfo">125</td>
+<td align="center" class="fooinfo">52</td>
+<td align="center" class="fooinfo">105</td>
+<td align="center" class="fooinfo">52</td>
+<td align="center" class="fooinfo">71</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#434
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/434.shtml"><img src="/pokedex-sm/icon/434.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/434.shtml">Stunky</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/poison.shtml"><img src="/pokedex-bw/type/poison.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/stench.shtml">Stench</a> <br /><a href="/abilitydex/aftermath.shtml">Aftermath</a> <br /><a href="/abilitydex/keeneye.shtml">Keen Eye</a></td>
+		<td align="center" class="fooinfo">63</td>
+<td align="center" class="fooinfo">63</td>
+<td align="center" class="fooinfo">47</td>
+<td align="center" class="fooinfo">41</td>
+<td align="center" class="fooinfo">41</td>
+<td align="center" class="fooinfo">74</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#435
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/435.shtml"><img src="/pokedex-sm/icon/435.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/435.shtml">Skuntank</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/poison.shtml"><img src="/pokedex-bw/type/poison.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/stench.shtml">Stench</a> <br /><a href="/abilitydex/aftermath.shtml">Aftermath</a> <br /><a href="/abilitydex/keeneye.shtml">Keen Eye</a></td>
+		<td align="center" class="fooinfo">103</td>
+<td align="center" class="fooinfo">93</td>
+<td align="center" class="fooinfo">67</td>
+<td align="center" class="fooinfo">71</td>
+<td align="center" class="fooinfo">61</td>
+<td align="center" class="fooinfo">84</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#442
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/442.shtml"><img src="/pokedex-sm/icon/442.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/442.shtml">Spiritomb</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/ghost.shtml"><img src="/pokedex-bw/type/ghost.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/pressure.shtml">Pressure</a> <br /><a href="/abilitydex/infiltrator.shtml">Infiltrator</a></td>
+		<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">92</td>
+<td align="center" class="fooinfo">108</td>
+<td align="center" class="fooinfo">92</td>
+<td align="center" class="fooinfo">108</td>
+<td align="center" class="fooinfo">35</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#452
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/452.shtml"><img src="/pokedex-sm/icon/452.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/452.shtml">Drapion</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/poison.shtml"><img src="/pokedex-bw/type/poison.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/battlearmor.shtml">Battle Armor</a> <br /><a href="/abilitydex/sniper.shtml">Sniper</a> <br /><a href="/abilitydex/keeneye.shtml">Keen Eye</a></td>
+		<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">110</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">95</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#461
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/461.shtml"><img src="/pokedex-sm/icon/461.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/461.shtml">Weavile</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/ice.shtml"><img src="/pokedex-bw/type/ice.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/pressure.shtml">Pressure</a> <br /><a href="/abilitydex/pickpocket.shtml">Pickpocket</a></td>
+		<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">120</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">45</td>
+<td align="center" class="fooinfo">85</td>
+<td align="center" class="fooinfo">125</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#491
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/491.shtml"><img src="/pokedex-sm/icon/491.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/491.shtml">Darkrai</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/baddreams.shtml">Bad Dreams</a> </td>
+		<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">135</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">125</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+			#493
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/493.shtml"><img src="/pokedex-sm/icon/493.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/493.shtml">Arceus</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/multitype.shtml">Multitype</a> </td>
+		<td align="center" class="fooinfo">120</td>
+<td align="center" class="fooinfo">120</td>
+<td align="center" class="fooinfo">120</td>
+<td align="center" class="fooinfo">120</td>
+<td align="center" class="fooinfo">120</td>
+<td align="center" class="fooinfo">120</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#509
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/509.shtml"><img src="/pokedex-sm/icon/509.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/509.shtml">Purrloin</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/limber.shtml">Limber</a> <br /><a href="/abilitydex/unburden.shtml">Unburden</a> <br /><a href="/abilitydex/prankster.shtml">Prankster</a></td>
+		<td align="center" class="fooinfo">41</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">37</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">37</td>
+<td align="center" class="fooinfo">66</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#510
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/510.shtml"><img src="/pokedex-sm/icon/510.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/510.shtml">Liepard</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/limber.shtml">Limber</a> <br /><a href="/abilitydex/unburden.shtml">Unburden</a> <br /><a href="/abilitydex/prankster.shtml">Prankster</a></td>
+		<td align="center" class="fooinfo">64</td>
+<td align="center" class="fooinfo">88</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">88</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">106</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#551
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/551.shtml"><img src="/pokedex-sm/icon/551.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/551.shtml">Sandile</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/ground.shtml"><img src="/pokedex-bw/type/ground.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/intimidate.shtml">Intimidate</a> <br /><a href="/abilitydex/moxie.shtml">Moxie</a> <br /><a href="/abilitydex/angerpoint.shtml">Anger Point</a></td>
+		<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">72</td>
+<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">65</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#552
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/552.shtml"><img src="/pokedex-sm/icon/552.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/552.shtml">Krokorok</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/ground.shtml"><img src="/pokedex-bw/type/ground.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/intimidate.shtml">Intimidate</a> <br /><a href="/abilitydex/moxie.shtml">Moxie</a> <br /><a href="/abilitydex/angerpoint.shtml">Anger Point</a></td>
+		<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">82</td>
+<td align="center" class="fooinfo">45</td>
+<td align="center" class="fooinfo">45</td>
+<td align="center" class="fooinfo">45</td>
+<td align="center" class="fooinfo">74</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#553
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/553.shtml"><img src="/pokedex-sm/icon/553.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/553.shtml">Krookodile</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/ground.shtml"><img src="/pokedex-bw/type/ground.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/intimidate.shtml">Intimidate</a> <br /><a href="/abilitydex/moxie.shtml">Moxie</a> <br /><a href="/abilitydex/angerpoint.shtml">Anger Point</a></td>
+		<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">117</td>
+<td align="center" class="fooinfo">80</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">92</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#559
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/559.shtml"><img src="/pokedex-sm/icon/559.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/559.shtml">Scraggy</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/fighting.shtml"><img src="/pokedex-bw/type/fighting.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/shedskin.shtml">Shed Skin</a> <br /><a href="/abilitydex/moxie.shtml">Moxie</a> <br /><a href="/abilitydex/intimidate.shtml">Intimidate</a></td>
+		<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">35</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">48</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#560
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/560.shtml"><img src="/pokedex-sm/icon/560.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/560.shtml">Scrafty</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/fighting.shtml"><img src="/pokedex-bw/type/fighting.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/shedskin.shtml">Shed Skin</a> <br /><a href="/abilitydex/moxie.shtml">Moxie</a> <br /><a href="/abilitydex/intimidate.shtml">Intimidate</a></td>
+		<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">115</td>
+<td align="center" class="fooinfo">45</td>
+<td align="center" class="fooinfo">115</td>
+<td align="center" class="fooinfo">58</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#570
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/570.shtml"><img src="/pokedex-sm/icon/570.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/570.shtml">Zorua</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/illusion.shtml">Illusion</a> </td>
+		<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">80</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">65</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#571
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/571.shtml"><img src="/pokedex-sm/icon/571.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/571.shtml">Zoroark</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/illusion.shtml">Illusion</a> </td>
+		<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">105</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">120</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">105</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#624
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/624.shtml"><img src="/pokedex-sm/icon/624.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/624.shtml">Pawniard</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/steel.shtml"><img src="/pokedex-bw/type/steel.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/defiant.shtml">Defiant</a> <br /><a href="/abilitydex/innerfocus.shtml">Inner Focus</a> <br /><a href="/abilitydex/pressure.shtml">Pressure</a></td>
+		<td align="center" class="fooinfo">45</td>
+<td align="center" class="fooinfo">85</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">40</td>
+<td align="center" class="fooinfo">60</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#625
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/625.shtml"><img src="/pokedex-sm/icon/625.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/625.shtml">Bisharp</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/steel.shtml"><img src="/pokedex-bw/type/steel.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/defiant.shtml">Defiant</a> <br /><a href="/abilitydex/innerfocus.shtml">Inner Focus</a> <br /><a href="/abilitydex/pressure.shtml">Pressure</a></td>
+		<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">125</td>
+<td align="center" class="fooinfo">100</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">70</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#629
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/629.shtml"><img src="/pokedex-sm/icon/629.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/629.shtml">Vullaby</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/flying.shtml"><img src="/pokedex-bw/type/flying.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/bigpecks.shtml">Big Pecks</a> <br /><a href="/abilitydex/overcoat.shtml">Overcoat</a> <br /><a href="/abilitydex/weakarmor.shtml">Weak Armor</a></td>
+		<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">55</td>
+<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">45</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">60</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#630
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/630.shtml"><img src="/pokedex-sm/icon/630.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/630.shtml">Mandibuzz</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/flying.shtml"><img src="/pokedex-bw/type/flying.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/bigpecks.shtml">Big Pecks</a> <br /><a href="/abilitydex/overcoat.shtml">Overcoat</a> <br /><a href="/abilitydex/weakarmor.shtml">Weak Armor</a></td>
+		<td align="center" class="fooinfo">110</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">105</td>
+<td align="center" class="fooinfo">55</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">80</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#633
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/633.shtml"><img src="/pokedex-sm/icon/633.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/633.shtml">Deino</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/dragon.shtml"><img src="/pokedex-bw/type/dragon.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/hustle.shtml">Hustle</a> </td>
+		<td align="center" class="fooinfo">52</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">45</td>
+<td align="center" class="fooinfo">50</td>
+<td align="center" class="fooinfo">38</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#634
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/634.shtml"><img src="/pokedex-sm/icon/634.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/634.shtml">Zweilous</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/dragon.shtml"><img src="/pokedex-bw/type/dragon.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/hustle.shtml">Hustle</a> </td>
+		<td align="center" class="fooinfo">72</td>
+<td align="center" class="fooinfo">85</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">65</td>
+<td align="center" class="fooinfo">70</td>
+<td align="center" class="fooinfo">58</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#635
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/635.shtml"><img src="/pokedex-sm/icon/635.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/635.shtml">Hydreigon</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/dragon.shtml"><img src="/pokedex-bw/type/dragon.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/levitate.shtml">Levitate</a> </td>
+		<td align="center" class="fooinfo">92</td>
+<td align="center" class="fooinfo">105</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">125</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">98</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#658
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/658.shtml"><img src="/pokedex-sm/icon/658.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/658.shtml">Greninja</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/water.shtml"><img src="/pokedex-bw/type/water.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/torrent.shtml">Torrent</a> <br /><a href="/abilitydex/protean.shtml">Protean</a></td>
+		<td align="center" class="fooinfo">72</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">67</td>
+<td align="center" class="fooinfo">103</td>
+<td align="center" class="fooinfo">71</td>
+<td align="center" class="fooinfo">122</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#658
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/658.shtml"><img src="/pokedex-sm/icon/658-a.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/658.shtml">Greninja</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/water.shtml"><img src="/pokedex-bw/type/water.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/battlebond.shtml">Battle Bond</a> </td>
+		<td align="center" class="fooinfo">72</td>
+<td align="center" class="fooinfo">145</td>
+<td align="center" class="fooinfo">67</td>
+<td align="center" class="fooinfo">153</td>
+<td align="center" class="fooinfo">71</td>
+<td align="center" class="fooinfo">132</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#675
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/675.shtml"><img src="/pokedex-sm/icon/675.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/675.shtml">Pangoro</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/fighting.shtml"><img src="/pokedex-bw/type/fighting.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/ironfist.shtml">Iron Fist</a> <br /><a href="/abilitydex/moldbreaker.shtml">Mold Breaker</a> <br /><a href="/abilitydex/scrappy.shtml">Scrappy</a></td>
+		<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">124</td>
+<td align="center" class="fooinfo">78</td>
+<td align="center" class="fooinfo">69</td>
+<td align="center" class="fooinfo">71</td>
+<td align="center" class="fooinfo">58</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#686
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/686.shtml"><img src="/pokedex-sm/icon/686.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/686.shtml">Inkay</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/psychic.shtml"><img src="/pokedex-bw/type/psychic.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/contrary.shtml">Contrary</a> <br /><a href="/abilitydex/suctioncups.shtml">Suction Cups</a> <br /><a href="/abilitydex/infiltrator.shtml">Infiltrator</a></td>
+		<td align="center" class="fooinfo">53</td>
+<td align="center" class="fooinfo">54</td>
+<td align="center" class="fooinfo">53</td>
+<td align="center" class="fooinfo">37</td>
+<td align="center" class="fooinfo">46</td>
+<td align="center" class="fooinfo">45</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#687
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/687.shtml"><img src="/pokedex-sm/icon/687.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/687.shtml">Malamar</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/psychic.shtml"><img src="/pokedex-bw/type/psychic.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/contrary.shtml">Contrary</a> <br /><a href="/abilitydex/suctioncups.shtml">Suction Cups</a> <br /><a href="/abilitydex/infiltrator.shtml">Infiltrator</a></td>
+		<td align="center" class="fooinfo">86</td>
+<td align="center" class="fooinfo">92</td>
+<td align="center" class="fooinfo">88</td>
+<td align="center" class="fooinfo">68</td>
+<td align="center" class="fooinfo">75</td>
+<td align="center" class="fooinfo">73</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#717
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/717.shtml"><img src="/pokedex-sm/icon/717.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/717.shtml">Yveltal</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/flying.shtml"><img src="/pokedex-bw/type/flying.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/darkaura.shtml">Dark Aura</a> </td>
+		<td align="center" class="fooinfo">126</td>
+<td align="center" class="fooinfo">131</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">131</td>
+<td align="center" class="fooinfo">98</td>
+<td align="center" class="fooinfo">99</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#720
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/720.shtml"><img src="/pokedex-sm/icon/720-u.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/720.shtml">Hoopa</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/psychic.shtml"><img src="/pokedex-bw/type/psychic.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/magician.shtml">Magician</a> </td>
+		<td align="center" class="fooinfo">80</td>
+<td align="center" class="fooinfo">160</td>
+<td align="center" class="fooinfo">60</td>
+<td align="center" class="fooinfo">170</td>
+<td align="center" class="fooinfo">130</td>
+<td align="center" class="fooinfo">80</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#727
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/727.shtml"><img src="/pokedex-sm/icon/727.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/727.shtml">Incineroar</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/fire.shtml"><img src="/pokedex-bw/type/fire.gif" border="0" /></a> <a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/blaze.shtml">Blaze</a> <br /><a href="/abilitydex/intimidate.shtml">Intimidate</a></td>
+		<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">115</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">80</td>
+<td align="center" class="fooinfo">90</td>
+<td align="center" class="fooinfo">60</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+			#773
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/773.shtml"><img src="/pokedex-sm/icon/773.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/773.shtml">Silvally</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/rkssystem.shtml">RKS System</a> </td>
+		<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">95</td>
+<td align="center" class="fooinfo">95</td>
+		</tr>
+		<tr>
+		<td align="center" class="fooinfo">
+		#799
+		</td>
+		<td align="center" class="fooinfo">
+		<table class="pkmn"><tr><td><a href="/pokedex-sm/799.shtml"><img src="/pokedex-sm/icon/799.png" border="0" /></a></td></tr></table>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/799.shtml">Guzzlord</a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/pokedex-sm/dark.shtml"><img src="/pokedex-bw/type/dark.gif" border="0" /></a> <a href="/pokedex-sm/dragon.shtml"><img src="/pokedex-bw/type/dragon.gif" border="0" /></a>
+		</td>
+		<td align="center" class="fooinfo">
+		<a href="/abilitydex/beastboost.shtml">Beast Boost</a> </td>
+		<td align="center" class="fooinfo">223</td>
+<td align="center" class="fooinfo">101</td>
+<td align="center" class="fooinfo">53</td>
+<td align="center" class="fooinfo">97</td>
+<td align="center" class="fooinfo">53</td>
+<td align="center" class="fooinfo">43</td>
+		</tr>
+</table>
+</div>
+
+</td>
+
+        <td width="1%" height="86" valign="top" bgcolor="#507C36"><div id="menu">
+<a href="/potw-sm/"><img src="/Toolbar/headers/PotW.gif" border="0" width="140" height="27"></a></b><br />
+<a href="/potw-sm/792.shtml"><img src="/potw-sm/792.jpg" border=0 alt="Pokémon of the Week" width="140"></a>          
+          <img src="/Toolbar/headers/NextInJapan.gif" border="0" width="140" height="27"></b><br />          
+<img border="0" src="/anime/NextOn/994.jpg" width="140"><br />
+Episode 994<br />
+<b>EffortfuLillie! A Determined Runaway Act!</b><br />
+<img border="0" src="/anime/NextOn/994-i.jpg" width="140"><br />
+Airdate: 23/11/2017<br />
+
+         <img src="/Toolbar/headers/RecentlyUsa.gif" border="0" width="140" height="27"></font></b><br />
+            <a href="/anime/epiguide/sunmoon/983.shtml"><img border="0" src="/983.jpg" width="140"><br />
+Episode 983<br />
+<b>Balloons, Brionne, and Belligerence!</b><br />
+<img src="/anime/synopsis.gif" border=0>Synopsis</a><br />
+          <a href="/anime/pictures/sunmoon/983.shtml"><img src="/anime/pictures.gif" border=0>Pictures</a><br />
+       <img src="/Toolbar/headers/ComingInUsa.gif" border="0" width="140" height="27"></font></b><br />
+            <a href="/anime/epiguide/sunmoon/984.shtml"><img border="0" src="/984.jpg" width="140"><br />
+Episode 984<br />
+<b>Mounting an Electrifying Charge!</b><br />
+Airdate: 26/11/2017</a><br />
+          <a href="/anime/epiguide/sunmoon/984.shtml"><img src="/anime/synopsis.gif" border=0>Synopsis</a><br />
+          <a href="/anime/pictures/sunmoon/984.shtml"><img src="/anime/pictures.gif" border=0>Pictures</a><br />
+         <img src="/Toolbar/headers/SocialMedia.gif" border="0" width="140" height="27"></b><br />          
+<div align="center"><a href="http://www.facebook.com/SerebiiNetPage" target="blank"><img src="/Toolbar/headers/Facebook.png" border="0" /></a> <a href="http://www.twitter.com/SerebiiNet" target="blank"><img src="/Toolbar/headers/Twitter.png" border="0" /></a></div> 
+ <img src="/Toolbar/headers/Association.gif" border="0" width="140" height="27"></font></b><br />
+          <div align="center"><a href="http://www.pocketmonsters.net/" target="blank"><img src="/Toolbar/pm.png" border="0" alt="#PM"></a><br /><a href="http://www.legendarypokemon.net/" target="blank"><img src="/Toolbar/lpoke.png" border="0" alt="Legendary Pokémon"></a><br /></div>
+
+</td>
+      </tr>
+    </table>
+      
+    &nbsp;
+    
+      <center>
+      <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="93%" bordercolor="#000000">
+        <tr>
+          <td width="28%" bgcolor="#507C36" valign="top">
+          <font SIZE="1" face="Verdana" color="#000000">All Content is 
+          ©Copyright of Serebii.net 1999-2017.<br />
+Pokémon And All Respective Names are Trademark & &copy; of Nintendo 1996-2017</font></b></td>
+          <td width="12%" bgcolor="#507C36" valign="top">
+          
+<div id="menu"><b>Navigation<br />
+          </b><a href="javascript:history.back()">Back</a> - <a href="javascript:history.forward()">Forward</a> - <a href="#top">Top</a></div></td>
+        </tr>
+      </table>
+      </center>
+<br /><div align="center"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 728x90, Bottom Site -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4807457957392508"
+     data-ad-slot="7960574568"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+</body>
+</html>

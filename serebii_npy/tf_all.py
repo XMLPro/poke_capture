@@ -51,19 +51,24 @@ def tf(n):
                     amig = tf_rect.rect(amig, 20 + random.randint(0, 4), 20 + random.randint(0, 4), 6, 6, (255, 255, 0))
                 for i in trange(5, desc="lg"):
                     lgimg = lgpy.blur(amig, i, 32).astype(np.uint8)
-                    tfimgs.append(lgimg)
+                    tfimgs.append(lgimg.transpose(2, 0, 1))
 
     result = np.array(tfimgs)
     return result
 
 
 from lgfilter import lgpy
+x_data = []
+t_data = []
 for i, n in enumerate([233, 445, 797, 785, 130, 681]):
     print("index: {}, n: {}".format(i, n))
     result = tf(n)
-    for index, x in enumerate(result[::4], 1):
-        pylab.subplot(10, 8, index)
-        pylab.axis("off")
-        pylab.imshow(x)
-    pylab.show()
-    # np.save("./tf/tf_227_{}_{}.npy".format(i, n), result)
+    x_data.extend(result)
+    t_data.extend([i] * len(result))
+    # for index, x in enumerate(result[::4], 1):
+    #     pylab.subplot(10, 8, index)
+    #     pylab.axis("off")
+    #     pylab.imshow(x)
+    # pylab.show()
+np.save("./data/x_tflg_{}.npy".format(len(t_data)), np.array(x_data, dtype=np.float32) / 255.0)
+np.save("./data/t_tflg_{}.npy".format(len(t_data)), np.array(t_data, dtype=np.uint8))

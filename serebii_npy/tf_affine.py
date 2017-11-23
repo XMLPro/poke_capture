@@ -2,14 +2,19 @@ import cv2
 import numpy as np
 import pylab
 
+# p1 = np.float32([
+#     [50, 20],
+#     [80, 80],
+#     [20, 80]
+#     ])
 p1 = np.float32([
-    [50, 20],
-    [80, 80],
-    [20, 80]
+    [16, 6],
+    [26, 26],
+    [6, 26]
     ])
 
 def affine(img, p2):
-    w, h, _ = img.shape
+    w, h = img.shape[:2]
     M = cv2.getAffineTransform(p1, p2)
     tfimg = cv2.warpAffine(img, M, (w, h))
     return tfimg

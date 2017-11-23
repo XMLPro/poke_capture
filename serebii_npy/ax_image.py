@@ -4,7 +4,7 @@ from chainer import links as L, functions as F
 import pylab
 import cv2
 
-np = cuda.cupy
+xp = cuda.cupy
 gpu_device = 0
 cuda.get_device(gpu_device).use()
 

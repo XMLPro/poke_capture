@@ -6,6 +6,8 @@ import pylab
 import cv2
 import numpy as np
 
+device = 1
+
 labelname = [ 233, 445, 797, 785, 130, 681, ]
 
 # x_data = np.load("lg/xtdata/x_pokedata1000.npy").astype(np.float32) / 255
@@ -186,7 +188,13 @@ else:
     print(x_data.shape)
     print(t_data.shape)
 
-    updater = chainer.training.StandardUpdater(train_itr, optimizer, device=1)
+    try:
+        import cupy
+        if cupy.available:
+            updater = chainer.training.StandardUpdater(train_itr, optimizer, device=device)
+        else:
+            updater = chainer.training.StandardUpdater(train_itr, optimizer, device=device)
+    except: pass
     trainer = chainer.training.Trainer(updater, (5, "epoch"))
 
     trainer.extend(extensions.LogReport())

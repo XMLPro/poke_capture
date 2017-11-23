@@ -1,8 +1,12 @@
-import numpy as np
+import numpy
 import chainer
 from chainer import links as L, functions as F
 import pylab
 import cv2
+
+np = cuda.cupy
+gpu_device = 0
+cuda.get_device(gpu_device).use()
 
 labelname = [ 233, 445, 797, 785, 130, 681, ]
 
@@ -85,6 +89,7 @@ optimizer = chainer.optimizers.Adam()
 imodel = IMAGE()
 model = L.Classifier(imodel, lossfun=F.softmax_cross_entropy, accfun=F.accuracy)
 optimizer.setup(model)
+model.to_gpu(gpu_device)
 
 import os
 model_path = "./tf_poke_ax.h5"

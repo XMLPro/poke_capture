@@ -1,12 +1,10 @@
 import numpy
 import chainer
 from chainer import links as L, functions as F
+from chainer.training import extensions
 import pylab
 import cv2
-
-xp = cuda.cupy
-gpu_device = 0
-cuda.get_device(gpu_device).use()
+import numpy as np
 
 labelname = [ 233, 445, 797, 785, 130, 681, ]
 
@@ -89,7 +87,6 @@ optimizer = chainer.optimizers.Adam()
 imodel = IMAGE()
 model = L.Classifier(imodel, lossfun=F.softmax_cross_entropy, accfun=F.accuracy)
 optimizer.setup(model)
-model.to_gpu(gpu_device)
 
 import os
 model_path = "./tf_poke_ax.h5"
@@ -97,7 +94,7 @@ cnt = 0
 from PIL import Image
 if os.path.exists(model_path):
     with chainer.no_backprop_mode():
-        chainer.serializers.load_hdf5(model_path, model)
+        chainer.serializers.load_npz(model_path, model)
         x_test = np.load("./x_poketest.npy")
         for x, t in zip(x_test[::10], t_test[::10]):
             cnt += 1
@@ -105,24 +102,22 @@ if os.path.exists(model_path):
             img = ximg.astype(np.float32)
             img = img.transpose((2, 0, 1)).reshape((1, 3, 227, 227))
             p = model.predictor(img)
-            pylab.show()
             p = F.softmax(p)
             print("=======")
             print(p)
             print(np.argmax(p.data), t)
             print("=======")
-    #         pylab.subplot(2, 6, cnt)
-    #         pylab.axis("off")
-    #         pylab.imshow(ximg)
-    #         tg = np.argmax(p.data)
-    #         pylab.title(tg) 
-    #
-    #         cnt += 1
-    #         pylab.subplot(2, 6, cnt)
-    #         pylab.axis("off")
-    #         ok = Image.open("/Users/ctare/my/python/pkcp/serebii/{}.png".format(labelname[tg]))
-    #         pylab.imshow(ok)
-    # pylab.show()
+            pylab.subplot(2, 6, cnt)
+            pylab.axis("off")
+            pylab.imshow(ximg)
+            tg = np.argmax(p.data)
+            pylab.title(tg) 
+            cnt += 1
+            pylab.subplot(2, 6, cnt)
+            pylab.axis("off")
+            ok = Image.open("/Users/ctare/my/python/pkcp/serebii/{}.png".format(labelname[tg]))
+            pylab.imshow(ok)
+    pylab.savefig("result.png")
     # x_data = np.load("sixdata227.npy")
     #
     # #  - - lea im - -
@@ -187,20 +182,20 @@ if os.path.exists(model_path):
     # print(sum(np.argmax(p.data, axis=1) == t_test) / len(t_test))
 else:
     x_train = chainer.datasets.TupleDataset(x_data, t_data)
-    train_itr = chainer.iterators.SerialIterator(x_train, batch_size=972)
+    train_itr = chainer.iterators.SerialIterator(x_train, batch_size=100)
     print(x_data.shape)
     print(t_data.shape)
 
-    updater = chainer.training.StandardUpdater(train_itr, optimizer)
+    updater = chainer.training.StandardUpdater(train_itr, optimizer, device=1)
     trainer = chainer.training.Trainer(updater, (5, "epoch"))
 
-    trainer.extend(chainer.training.extensions.LogReport())
-    trainer.extend(chainer.training.extensions.PrintReport(["epoch", "main/loss", "main/accuracy"]))
-    trainer.extend(chainer.training.extensions.ProgressBar())
+    trainer.extend(extensions.LogReport())
+    trainer.extend(extensions.PrintReport(["epoch", "main/loss", "main/accuracy"]))
+    trainer.extend(extensions.ProgressBar())
 
     print("run!")
     trainer.run()
-    chainer.serializers.save_hdf5(model_path, model)
+    chainer.serializers.save_npz(model_path, model)
 
 # c1 = L.Convolution2D(3, 96, 12, stride=4)
 # h = c1(x_data, dtype=np.float32))

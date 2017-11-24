@@ -1,2 +1,6 @@
 *npy
 __pycache__/
+graph/*
+*h5
+result/*
+*.png

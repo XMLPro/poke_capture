@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 #encoding: utf-8
 from tqdm import tqdm
 # tqdm = lambda x: x
@@ -102,14 +101,21 @@ for t in range(3):
 # pokemonsに各ポケモンが格納されている
 # 切り抜き終了　以下必要のないコード
 
-min_val = None
-result = None
+import pylab
+result = []
+for i, v in enumerate(pokemons):
+    img = v[:-30, 15:-15, ::-1]
+    result.append(img)
+np.save("./six_small_orange_70x70.npy", np.array(result))
+# min_val = None
+# result = None
+#
+# # target = cv2.cvtColor(target, cv2.COLOR_RGB2GRAY) // gray scale
+# pokes = np.load("pokes.npy")
+# pokes = [cv2.resize(x, img_size) for x in pokes]
+# for i, img in enumerate(pokemons):
+#     cv2.imshow("poke%d" %i, img)
 
-# target = cv2.cvtColor(target, cv2.COLOR_RGB2GRAY) // gray scale
-pokes = np.load("pokes.npy")
-pokes = [cv2.resize(x, img_size) for x in pokes]
-for i, img in enumerate(pokemons):
-    cv2.imshow("poke%d" %i, img)
 ### target = pokemons[5]
 ### 
 ### flg = False
@@ -322,6 +328,6 @@ for i, img in enumerate(pokemons):
 # cv2.imshow("2r", result)
 
 # plt.show()
-cv2.waitKey()
+# cv2.waitKey()
 # import os
 # os.system("./killer.sh")

@@ -13,16 +13,16 @@ labelname = [ 233, 445, 797, 785, 130, 681, ]
 # x_data = np.load("lg/xtdata/x_pokedata1000.npy").astype(np.float32) / 255
 # t_data = np.load("lg/xtdata/t_pokedata1000.npy").astype(np.int32)
 
-print("load data...")
-x_data = np.load("x_tfsix_227_23328.npy").astype(np.float32) / 255
-print("load label...")
-t_data = np.load("t_tfsix_227_23328.npy").astype(np.int32)
+# print("load data...")
+# x_data = np.load("data/x_tflg_3840.npy").astype(np.float32)
+# print("load label...")
+# t_data = np.load("data/t_tflg_3840.npy").astype(np.int32)
 
 # dec = 5
 # x_data = x_data[::dec]
 # t_data = t_data[::dec]
-
-x_data = x_data.transpose(0, 3, 1, 2)
+#
+# x_data = x_data.transpose(0, 3, 1, 2)
 
 
 class IMAGE(chainer.Chain):
@@ -50,76 +50,187 @@ class IMAGE(chainer.Chain):
                 # # pooling 3, stride=2 | 13
                 b2=L.BatchNormalization(256),
                 # # (13 + 1*2 - 3) / 1 => 13
-                c3=L.Convolution2D(256, 384, 3, pad=1),
+                c3=L.Convolution2D(256, 256, 3, pad=1),
                 # # (13 + 1*2 - 3) / 1 => 13
-                c4=L.Convolution2D(384, 384, 3, pad=1),
+                c4=L.Convolution2D(256, 256, 3, pad=1),
                 # # (13 + 1*2 - 3) / 1 => 13
-                c5=L.Convolution2D(384, 256, 3, pad=1),
+                # c5=L.Convolution2D(256, 256, 3, pad=1),
                 # # pooling 3, stide=2 | 6
                 l1=L.Linear(256 * 6 * 6, 4096),
                 l2=L.Linear(4096, 1024),
                 l3=L.Linear(1024, 6),
                 )
 
-    def show(self, h, size):
-        print(h.data.shape)
+    def show(self, h, size, data=None):
         img = h.data[0]
         ch = len(img)
         for i, v in enumerate(img, 1):
             pylab.subplot(int(ch ** 0.5) + 1, int(ch ** 0.5) + 1, i)
             pylab.axis('off')
             pylab.imshow(v)
+        # pylab.show()
+        pylab.savefig("graph/conv_{}_{}.png".format(data[0], data[1]))
 
-    def __call__(self, x):
+    def __call__(self, x, data=None):
+        cnt = 0
         h = x
         h = F.max_pooling_2d(F.relu(self.b1(self.c1(h))), 3, stride=2)
+        # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
         h = F.max_pooling_2d(F.relu(self.b2(self.c2(h))), 3, stride=2)
+        # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
         # h = F.max_pooling_2d(F.local_response_normalization(F.relu(self.c1(h))), 3, stride=2)
         # h = F.max_pooling_2d(F.local_response_normalization(F.relu(self.c2(h))), 3, stride=2)
         h = F.relu(self.c3(h))
+        # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
         h = F.relu(self.c4(h))
-        # self.show(h, 24)
-        h = F.max_pooling_2d(F.relu(self.c5(h)), 3, stride=2)
+        # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+        # h = F.relu(self.c5(h))
+        h = F.max_pooling_2d(h, 3, stride=2)
+        # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+        # h = F.relu(self.l1(h))
         h = F.dropout(F.relu(self.l1(h)))
+        # pylab.subplot(2, 6, data * 2 + 1)
+        # pylab.axis("off")
+        # pylab.imshow(h.data.reshape((64, 64)).astype(np.uint8) * 255)
+        # pylab.savefig("graph/fc_{}_{}.png".format(data, 0))
+        # h = F.relu(self.l2(h))
         h = F.dropout(F.relu(self.l2(h)))
+        # pylab.subplot(2, 6, data * 2 + 2)
+        # pylab.axis("off")
+        # pylab.imshow(h.data.reshape((32, 32)).astype(np.uint8) * 255)
+        # pylab.savefig("graph/fc_{}_{}.png".format(data, 1))
+        return self.l3(h)
+
+weight_ = IMAGE()
+weight = L.Classifier(weight_, lossfun=F.softmax_cross_entropy, accfun=F.accuracy)
+weight_path = "./tf_poke_ax_lg_shuffle_3840_small_5.h5"
+chainer.serializers.load_npz(weight_path, weight)
+class IMAGE_TRANS(chainer.Chain):
+    def __init__(self):
+        super().__init__(
+                # (227 - 11) / 4 + 1 => 55
+                c1=L.Convolution2D(3, 96, 11, stride=4,
+                    initialW=weight.predictor.c1.W.data,
+                    initial_bias=weight.predictor.c1.b.data),
+                # pooling 3, stride=2 | 27
+                b1=L.BatchNormalization(96,
+                    initial_gamma=weight.predictor.b1.gamma.data,
+                    initial_beta=weight.predictor.b1.beta.data),
+                # # (27 + 2*2 - 5) / 1 => 27
+                c2=L.Convolution2D(96, 256, 5, pad=2,
+                    initialW=weight.predictor.c2.W.data,
+                    initial_bias=weight.predictor.c2.b.data),
+                # # pooling 3, stride=2 | 13
+                b2=L.BatchNormalization(256,
+                    initial_gamma=weight.predictor.b2.gamma.data,
+                    initial_beta=weight.predictor.b2.beta.data),
+                # # (13 + 1*2 - 3) / 1 => 13
+                c3=L.Convolution2D(256, 256, 3, pad=1,
+                    initialW=weight.predictor.c3.W.data,
+                    initial_bias=weight.predictor.c3.b.data),
+                # # (13 + 1*2 - 3) / 1 => 13
+                c4=L.Convolution2D(256, 256, 3, pad=1,
+                    initialW=weight.predictor.c4.W.data,
+                    initial_bias=weight.predictor.c4.b.data),
+                # # pooling 3, stide=2 | 6
+                l1=L.Linear(256 * 6 * 6, 4096),
+                l2=L.Linear(4096, 1024),
+                l3=L.Linear(1024, 6),
+                )
+
+    def show(self, h, size, data=None):
+        img = h.data[0]
+        ch = len(img)
+        for i, v in enumerate(img, 1):
+            pylab.subplot(int(ch ** 0.5) + 1, int(ch ** 0.5) + 1, i)
+            pylab.axis('off')
+            pylab.imshow(v)
+        # pylab.show()
+        pylab.savefig("graph/conv_{}_{}.png".format(data[0], data[1]))
+
+    def __call__(self, x, data=None):
+        cnt = 0
+        with chainer.no_backprop_mode():
+            h = x
+            h = F.max_pooling_2d(F.relu(self.b1(self.c1(h))), 3, stride=2)
+            # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+            h = F.max_pooling_2d(F.relu(self.b2(self.c2(h))), 3, stride=2)
+            # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+            h = F.relu(self.c3(h))
+            # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+            h = F.relu(self.c4(h))
+            # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+            h = F.max_pooling_2d(h, 3, stride=2)
+            # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+        h = F.relu(self.l1(h))
+        # h = F.dropout(F.relu(self.l1(h)))
+        # pylab.subplot(2, 6, data * 2 + 1)
+        # pylab.axis("off")
+        # pylab.imshow(h.data.reshape((64, 64)).astype(np.uint8) * 255)
+        # pylab.savefig("graph/fc_{}_{}.png".format(data, 0))
+        h = F.relu(self.l2(h))
+        # h = F.dropout(F.relu(self.l2(h)))
+        # pylab.subplot(2, 6, data * 2 + 2)
+        # pylab.axis("off")
+        # pylab.imshow(h.data.reshape((32, 32)).astype(np.uint8) * 255)
+        # pylab.savefig("graph/fc_{}_{}.png".format(data, 1))
         return self.l3(h)
 
 
 optimizer = chainer.optimizers.Adam()
-imodel = IMAGE()
+imodel = IMAGE_TRANS()
 model = L.Classifier(imodel, lossfun=F.softmax_cross_entropy, accfun=F.accuracy)
 optimizer.setup(model)
 
 import os
-model_path = "./tf_poke_ax.h5"
+model_path = "./tf_poke_ax_lg_shuffle_3840_small_5_trans.h5"
 cnt = 0
 from PIL import Image
+from lgfilter import lgpy
+from tqdm import tqdm
 if os.path.exists(model_path):
     with chainer.no_backprop_mode():
         chainer.serializers.load_npz(model_path, model)
-        x_test = np.load("./x_poketest.npy")
-        for x, t in zip(x_test[::10], t_test[::10]):
-            cnt += 1
-            ximg = cv2.resize(x, (227, 227))[:, :, ::-1]
-            img = ximg.astype(np.float32)
-            img = img.transpose((2, 0, 1)).reshape((1, 3, 227, 227))
-            p = model.predictor(img)
-            p = F.softmax(p)
-            print("=======")
-            print(p)
-            print(np.argmax(p.data), t)
-            print("=======")
-            pylab.subplot(2, 6, cnt)
-            pylab.axis("off")
-            pylab.imshow(ximg)
-            tg = np.argmax(p.data)
-            pylab.title(tg) 
-            cnt += 1
-            pylab.subplot(2, 6, cnt)
-            pylab.axis("off")
-            ok = Image.open("/Users/ctare/my/python/pkcp/serebii/{}.png".format(labelname[tg]))
-            pylab.imshow(ok)
-    pylab.savefig("result.png")
+        # target = model.predictor.c1.W.data
+        # print(target.shape)
+        # print(np.max(target - np.min(target)))
+        # for index, c in enumerate(target, 1):
+        #     c -= np.min(c)
+        #     c *= 255
+        #     c = c.astype(np.uint8)
+        #     for cc in c:
+        #         pylab.subplot(target.shape[0] ** 0.5 + 1, target.shape[0] ** 0.5 + 1, index)
+        #         pylab.axis("off")
+        #         pylab.imshow(cc)
+        # pylab.show()
+        # - - -
+        x_test = np.load("./six_small_orange_70x70.npy")
+        # for i, v in enumerate(tqdm(x_test)):
+        #     img = cv2.resize(v, (227, 227), interpolation=cv2.INTER_CUBIC).reshape(1, 227, 227, 3).transpose(0, 3, 1, 2).astype(np.float32)
+        #     model.predictor(img, data=i)
+        # - - -
+        for index, x in enumerate(x_test):
+            for i in range(5):
+                cnt += 1
+                ximg = lgpy.blur(x, i, 70)
+                ximg = cv2.resize(ximg, (227, 227), interpolation=cv2.INTER_CUBIC)
+                img = ximg.astype(np.float32) / 255.0
+                img = img.transpose((2, 0, 1)).reshape((1, 3, 227, 227))
+                p = model.predictor(img)
+                p = F.softmax(p)
+                tg = np.argmax(p.data)
+                print(tg, labelname[tg])
+                # pylab.savefig("./result_{}.png".format(index))
+                pylab.subplot(10, 6, cnt)
+                pylab.axis("off")
+                pylab.imshow(ximg)
+                cnt += 1
+                pylab.subplot(10, 6, cnt)
+                pylab.axis("off")
+                ok = Image.open("../serebii/{}.png".format(labelname[tg]))
+                pylab.imshow(ok)
+    pylab.show()
+    # pylab.savefig("/Users/ctare/Desktop/result.png")
     # x_data = np.load("sixdata227.npy")
     #
     # #  - - lea im - -
@@ -184,7 +295,7 @@ if os.path.exists(model_path):
     # print(sum(np.argmax(p.data, axis=1) == t_test) / len(t_test))
 else:
     x_train = chainer.datasets.TupleDataset(x_data, t_data)
-    train_itr = chainer.iterators.SerialIterator(x_train, batch_size=100)
+    train_itr = chainer.iterators.SerialIterator(x_train, batch_size=320)
     print(x_data.shape)
     print(t_data.shape)
 
@@ -193,8 +304,9 @@ else:
         if cupy.available:
             updater = chainer.training.StandardUpdater(train_itr, optimizer, device=device)
         else:
-            updater = chainer.training.StandardUpdater(train_itr, optimizer, device=device)
-    except: pass
+            updater = chainer.training.StandardUpdater(train_itr, optimizer)
+    except:
+        updater = chainer.training.StandardUpdater(train_itr, optimizer)
     trainer = chainer.training.Trainer(updater, (5, "epoch"))
 
     trainer.extend(extensions.LogReport())

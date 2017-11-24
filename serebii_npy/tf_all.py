@@ -49,8 +49,9 @@ def tf(n):
 
                 if random.random() < 0.2:
                     amig = tf_rect.rect(amig, 20 + random.randint(0, 4), 20 + random.randint(0, 4), 6, 6, (255, 255, 0))
-                for i in trange(5, desc="lg"):
+                for i in range(10):
                     lgimg = lgpy.blur(amig, i, 32).astype(np.uint8)
+                    lgimg = cv2.resize(lgimg, (227, 227), interpolation=cv2.INTER_CUBIC)
                     tfimgs.append(lgimg.transpose(2, 0, 1))
 
     result = np.array(tfimgs)
@@ -70,5 +71,14 @@ for i, n in enumerate([233, 445, 797, 785, 130, 681]):
     #     pylab.axis("off")
     #     pylab.imshow(x)
     # pylab.show()
+
+zipped = list(zip(x_data, t_data))
+random.shuffle(zipped)
+x_data = []
+t_data = []
+for x, t in zipped:
+    x_data.append(x)
+    t_data.append(t)
+
 np.save("./data/x_tflg_{}.npy".format(len(t_data)), np.array(x_data, dtype=np.float32) / 255.0)
 np.save("./data/t_tflg_{}.npy".format(len(t_data)), np.array(t_data, dtype=np.uint8))

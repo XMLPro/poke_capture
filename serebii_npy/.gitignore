@@ -4,3 +4,4 @@ graph/*
 *h5
 result/*
 *.png
+*npz

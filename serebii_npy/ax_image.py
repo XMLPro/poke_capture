@@ -13,10 +13,10 @@ labelname = [ 233, 445, 797, 785, 130, 681, ]
 # x_data = np.load("lg/xtdata/x_pokedata1000.npy").astype(np.float32) / 255
 # t_data = np.load("lg/xtdata/t_pokedata1000.npy").astype(np.int32)
 
-# print("load data...")
-# x_data = np.load("data/x_tflg_3840.npy").astype(np.float32)
-# print("load label...")
-# t_data = np.load("data/t_tflg_3840.npy").astype(np.int32)
+print("load data...")
+x_data = np.load("data/x_tflg_gray_3840.npy").astype(np.float32)
+print("load label...")
+t_data = np.load("data/t_tflg_gray_3840.npy").astype(np.int32)
 
 # dec = 5
 # x_data = x_data[::dec]
@@ -41,24 +41,27 @@ class IMAGE(chainer.Chain):
                 # l2=L.Linear(1024, 256),
                 # l3=L.Linear(256, 6),
 
-                # (227 - 11) / 4 + 1 => 55
-                c1=L.Convolution2D(3, 96, 11, stride=4),
-                # pooling 3, stride=2 | 27
-                b1=L.BatchNormalization(96),
-                # # (27 + 2*2 - 5) / 1 => 27
-                c2=L.Convolution2D(96, 256, 5, pad=2),
-                # # pooling 3, stride=2 | 13
-                b2=L.BatchNormalization(256),
-                # # (13 + 1*2 - 3) / 1 => 13
-                c3=L.Convolution2D(256, 256, 3, pad=1),
-                # # (13 + 1*2 - 3) / 1 => 13
-                c4=L.Convolution2D(256, 256, 3, pad=1),
-                # # (13 + 1*2 - 3) / 1 => 13
-                # c5=L.Convolution2D(256, 256, 3, pad=1),
-                # # pooling 3, stide=2 | 6
-                l1=L.Linear(256 * 6 * 6, 4096),
-                l2=L.Linear(4096, 1024),
-                l3=L.Linear(1024, 6),
+                # # (227 - 11) / 4 + 1 => 55
+                # c1=L.Convolution2D(3, 96, 11, stride=4),
+                # # pooling 3, stride=2 | 27
+                # b1=L.BatchNormalization(96),
+                # # # (27 + 2*2 - 5) / 1 => 27
+                # c2=L.Convolution2D(96, 256, 5, pad=2),
+                # # # pooling 3, stride=2 | 13
+                # b2=L.BatchNormalization(256),
+                # # # (13 + 1*2 - 3) / 1 => 13
+                # c3=L.Convolution2D(256, 256, 3, pad=1),
+                # # # (13 + 1*2 - 3) / 1 => 13
+                # c4=L.Convolution2D(256, 256, 3, pad=1),
+                # # # (13 + 1*2 - 3) / 1 => 13
+                # # c5=L.Convolution2D(256, 256, 3, pad=1),
+                # # # pooling 3, stide=2 | 6
+                # l1=L.Linear(256 * 6 * 6, 4096),
+                # l2=L.Linear(4096, 1024),
+                # l3=L.Linear(1024, 6),
+                l1=L.Linear(1024, 1024),
+                l2=L.Linear(1024, 144),
+                l3=L.Linear(144, 6),
                 )
 
     def show(self, h, size, data=None):
@@ -74,116 +77,118 @@ class IMAGE(chainer.Chain):
     def __call__(self, x, data=None):
         cnt = 0
         h = x
-        h = F.max_pooling_2d(F.relu(self.b1(self.c1(h))), 3, stride=2)
-        # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
-        h = F.max_pooling_2d(F.relu(self.b2(self.c2(h))), 3, stride=2)
-        # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
-        # h = F.max_pooling_2d(F.local_response_normalization(F.relu(self.c1(h))), 3, stride=2)
-        # h = F.max_pooling_2d(F.local_response_normalization(F.relu(self.c2(h))), 3, stride=2)
-        h = F.relu(self.c3(h))
-        # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
-        h = F.relu(self.c4(h))
-        # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
-        # h = F.relu(self.c5(h))
-        h = F.max_pooling_2d(h, 3, stride=2)
-        # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
-        # h = F.relu(self.l1(h))
-        h = F.dropout(F.relu(self.l1(h)))
-        # pylab.subplot(2, 6, data * 2 + 1)
-        # pylab.axis("off")
-        # pylab.imshow(h.data.reshape((64, 64)).astype(np.uint8) * 255)
-        # pylab.savefig("graph/fc_{}_{}.png".format(data, 0))
-        # h = F.relu(self.l2(h))
-        h = F.dropout(F.relu(self.l2(h)))
-        # pylab.subplot(2, 6, data * 2 + 2)
-        # pylab.axis("off")
-        # pylab.imshow(h.data.reshape((32, 32)).astype(np.uint8) * 255)
-        # pylab.savefig("graph/fc_{}_{}.png".format(data, 1))
-        return self.l3(h)
-
-weight_ = IMAGE()
-weight = L.Classifier(weight_, lossfun=F.softmax_cross_entropy, accfun=F.accuracy)
-weight_path = "./tf_poke_ax_lg_shuffle_3840_small_5.h5"
-chainer.serializers.load_npz(weight_path, weight)
-class IMAGE_TRANS(chainer.Chain):
-    def __init__(self):
-        super().__init__(
-                # (227 - 11) / 4 + 1 => 55
-                c1=L.Convolution2D(3, 96, 11, stride=4,
-                    initialW=weight.predictor.c1.W.data,
-                    initial_bias=weight.predictor.c1.b.data),
-                # pooling 3, stride=2 | 27
-                b1=L.BatchNormalization(96,
-                    initial_gamma=weight.predictor.b1.gamma.data,
-                    initial_beta=weight.predictor.b1.beta.data),
-                # # (27 + 2*2 - 5) / 1 => 27
-                c2=L.Convolution2D(96, 256, 5, pad=2,
-                    initialW=weight.predictor.c2.W.data,
-                    initial_bias=weight.predictor.c2.b.data),
-                # # pooling 3, stride=2 | 13
-                b2=L.BatchNormalization(256,
-                    initial_gamma=weight.predictor.b2.gamma.data,
-                    initial_beta=weight.predictor.b2.beta.data),
-                # # (13 + 1*2 - 3) / 1 => 13
-                c3=L.Convolution2D(256, 256, 3, pad=1,
-                    initialW=weight.predictor.c3.W.data,
-                    initial_bias=weight.predictor.c3.b.data),
-                # # (13 + 1*2 - 3) / 1 => 13
-                c4=L.Convolution2D(256, 256, 3, pad=1,
-                    initialW=weight.predictor.c4.W.data,
-                    initial_bias=weight.predictor.c4.b.data),
-                # # pooling 3, stide=2 | 6
-                l1=L.Linear(256 * 6 * 6, 4096),
-                l2=L.Linear(4096, 1024),
-                l3=L.Linear(1024, 6),
-                )
-
-    def show(self, h, size, data=None):
-        img = h.data[0]
-        ch = len(img)
-        for i, v in enumerate(img, 1):
-            pylab.subplot(int(ch ** 0.5) + 1, int(ch ** 0.5) + 1, i)
-            pylab.axis('off')
-            pylab.imshow(v)
-        # pylab.show()
-        pylab.savefig("graph/conv_{}_{}.png".format(data[0], data[1]))
-
-    def __call__(self, x, data=None):
-        cnt = 0
-        with chainer.no_backprop_mode():
-            h = x
-            h = F.max_pooling_2d(F.relu(self.b1(self.c1(h))), 3, stride=2)
-            # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
-            h = F.max_pooling_2d(F.relu(self.b2(self.c2(h))), 3, stride=2)
-            # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
-            h = F.relu(self.c3(h))
-            # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
-            h = F.relu(self.c4(h))
-            # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
-            h = F.max_pooling_2d(h, 3, stride=2)
-            # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
-        h = F.relu(self.l1(h))
+        # h = F.max_pooling_2d(F.relu(self.b1(self.c1(h))), 3, stride=2)
+        # # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+        # h = F.max_pooling_2d(F.relu(self.b2(self.c2(h))), 3, stride=2)
+        # # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+        # # h = F.max_pooling_2d(F.local_response_normalization(F.relu(self.c1(h))), 3, stride=2)
+        # # h = F.max_pooling_2d(F.local_response_normalization(F.relu(self.c2(h))), 3, stride=2)
+        # h = F.relu(self.c3(h))
+        # # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+        # h = F.relu(self.c4(h))
+        # # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+        # # h = F.relu(self.c5(h))
+        # h = F.max_pooling_2d(h, 3, stride=2)
+        # # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+        # # h = F.relu(self.l1(h))
         # h = F.dropout(F.relu(self.l1(h)))
-        # pylab.subplot(2, 6, data * 2 + 1)
-        # pylab.axis("off")
-        # pylab.imshow(h.data.reshape((64, 64)).astype(np.uint8) * 255)
-        # pylab.savefig("graph/fc_{}_{}.png".format(data, 0))
-        h = F.relu(self.l2(h))
+        # # pylab.subplot(2, 6, data * 2 + 1)
+        # # pylab.axis("off")
+        # # pylab.imshow(h.data.reshape((64, 64)).astype(np.uint8) * 255)
+        # # pylab.savefig("graph/fc_{}_{}.png".format(data, 0))
+        # # h = F.relu(self.l2(h))
         # h = F.dropout(F.relu(self.l2(h)))
-        # pylab.subplot(2, 6, data * 2 + 2)
-        # pylab.axis("off")
-        # pylab.imshow(h.data.reshape((32, 32)).astype(np.uint8) * 255)
-        # pylab.savefig("graph/fc_{}_{}.png".format(data, 1))
+        # # pylab.subplot(2, 6, data * 2 + 2)
+        # # pylab.axis("off")
+        # # pylab.imshow(h.data.reshape((32, 32)).astype(np.uint8) * 255)
+        # # pylab.savefig("graph/fc_{}_{}.png".format(data, 1))
+        h = F.relu(self.l1(h))
+        h = F.relu(self.l2(h))
         return self.l3(h)
+
+# weight_ = IMAGE()
+# weight = L.Classifier(weight_, lossfun=F.softmax_cross_entropy, accfun=F.accuracy)
+# weight_path = ""
+# chainer.serializers.load_npz(weight_path, weight)
+# class IMAGE_TRANS(chainer.Chain):
+#     def __init__(self):
+#         super().__init__(
+#                 # (227 - 11) / 4 + 1 => 55
+#                 c1=L.Convolution2D(3, 96, 11, stride=4,
+#                     initialW=weight.predictor.c1.W.data,
+#                     initial_bias=weight.predictor.c1.b.data),
+#                 # pooling 3, stride=2 | 27
+#                 b1=L.BatchNormalization(96,
+#                     initial_gamma=weight.predictor.b1.gamma.data,
+#                     initial_beta=weight.predictor.b1.beta.data),
+#                 # # (27 + 2*2 - 5) / 1 => 27
+#                 c2=L.Convolution2D(96, 256, 5, pad=2,
+#                     initialW=weight.predictor.c2.W.data,
+#                     initial_bias=weight.predictor.c2.b.data),
+#                 # # pooling 3, stride=2 | 13
+#                 b2=L.BatchNormalization(256,
+#                     initial_gamma=weight.predictor.b2.gamma.data,
+#                     initial_beta=weight.predictor.b2.beta.data),
+#                 # # (13 + 1*2 - 3) / 1 => 13
+#                 c3=L.Convolution2D(256, 256, 3, pad=1,
+#                     initialW=weight.predictor.c3.W.data,
+#                     initial_bias=weight.predictor.c3.b.data),
+#                 # # (13 + 1*2 - 3) / 1 => 13
+#                 c4=L.Convolution2D(256, 256, 3, pad=1,
+#                     initialW=weight.predictor.c4.W.data,
+#                     initial_bias=weight.predictor.c4.b.data),
+#                 # # pooling 3, stide=2 | 6
+#                 l1=L.Linear(256 * 6 * 6, 4096),
+#                 l2=L.Linear(4096, 1024),
+#                 l3=L.Linear(1024, 6),
+#                 )
+#
+#     def show(self, h, size, data=None):
+#         img = h.data[0]
+#         ch = len(img)
+#         for i, v in enumerate(img, 1):
+#             pylab.subplot(int(ch ** 0.5) + 1, int(ch ** 0.5) + 1, i)
+#             pylab.axis('off')
+#             pylab.imshow(v)
+#         # pylab.show()
+#         pylab.savefig("graph/conv_{}_{}.png".format(data[0], data[1]))
+#
+#     def __call__(self, x, data=None):
+#         cnt = 0
+#         with chainer.no_backprop_mode():
+#             h = x
+#             h = F.max_pooling_2d(F.relu(self.b1(self.c1(h))), 3, stride=2)
+#             # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+#             h = F.max_pooling_2d(F.relu(self.b2(self.c2(h))), 3, stride=2)
+#             # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+#             h = F.relu(self.c3(h))
+#             # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+#             h = F.relu(self.c4(h))
+#             # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+#             h = F.max_pooling_2d(h, 3, stride=2)
+#             # self.show(h, h.shape[-1], data=[data, cnt]); cnt += 1
+#         h = F.relu(self.l1(h))
+#         # h = F.dropout(F.relu(self.l1(h)))
+#         # pylab.subplot(2, 6, data * 2 + 1)
+#         # pylab.axis("off")
+#         # pylab.imshow(h.data.reshape((64, 64)).astype(np.uint8) * 255)
+#         # pylab.savefig("graph/fc_{}_{}.png".format(data, 0))
+#         h = F.relu(self.l2(h))
+#         # h = F.dropout(F.relu(self.l2(h)))
+#         # pylab.subplot(2, 6, data * 2 + 2)
+#         # pylab.axis("off")
+#         # pylab.imshow(h.data.reshape((32, 32)).astype(np.uint8) * 255)
+#         # pylab.savefig("graph/fc_{}_{}.png".format(data, 1))
+#         return self.l3(h)
 
 
 optimizer = chainer.optimizers.Adam()
-imodel = IMAGE_TRANS()
+imodel = IMAGE()
 model = L.Classifier(imodel, lossfun=F.softmax_cross_entropy, accfun=F.accuracy)
 optimizer.setup(model)
 
 import os
-model_path = "./tf_poke_ax_lg_shuffle_3840_small_5_trans.h5"
+model_path = "./tf_poke_gray.npz"
 cnt = 0
 from PIL import Image
 from lgfilter import lgpy
@@ -209,13 +214,16 @@ if os.path.exists(model_path):
         #     img = cv2.resize(v, (227, 227), interpolation=cv2.INTER_CUBIC).reshape(1, 227, 227, 3).transpose(0, 3, 1, 2).astype(np.float32)
         #     model.predictor(img, data=i)
         # - - -
-        for index, x in enumerate(x_test):
-            for i in range(5):
+        for index, x in enumerate(x_data[970:1000]):
+            # for i in range(5):
                 cnt += 1
-                ximg = lgpy.blur(x, i, 70)
-                ximg = cv2.resize(ximg, (227, 227), interpolation=cv2.INTER_CUBIC)
-                img = ximg.astype(np.float32) / 255.0
-                img = img.transpose((2, 0, 1)).reshape((1, 3, 227, 227))
+                print((x.reshape((32, 32)) * 255).astype(int).shape)
+                x = lgpy.blur((x.reshape((32, 32)) * 255).astype(int), 1, 32)
+                # ximg = cv2.resize(ximg, (32, 32))
+                # ximg = cv2.cvtColor(ximg, cv2.COLOR_RGB2GRAY)
+                # img = ximg.astype(np.float32) / 255.0
+                img = x.reshape((1, 32 * 32)).astype(np.float32) / 255
+                # img = img.transpose((2, 0, 1)).reshape((1, 3, 227, 227))
                 p = model.predictor(img)
                 p = F.softmax(p)
                 tg = np.argmax(p.data)
@@ -223,7 +231,7 @@ if os.path.exists(model_path):
                 # pylab.savefig("./result_{}.png".format(index))
                 pylab.subplot(10, 6, cnt)
                 pylab.axis("off")
-                pylab.imshow(ximg)
+                pylab.imshow(x.reshape((32, 32)))
                 cnt += 1
                 pylab.subplot(10, 6, cnt)
                 pylab.axis("off")

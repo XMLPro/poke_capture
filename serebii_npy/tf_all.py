@@ -51,8 +51,9 @@ def tf(n):
                     amig = tf_rect.rect(amig, 20 + random.randint(0, 4), 20 + random.randint(0, 4), 6, 6, (255, 255, 0))
                 for i in range(10):
                     lgimg = lgpy.blur(amig, i, 32).astype(np.uint8)
-                    lgimg = cv2.resize(lgimg, (227, 227), interpolation=cv2.INTER_CUBIC)
-                    tfimgs.append(lgimg.transpose(2, 0, 1))
+                    lgimg = cv2.cvtColor(lgimg, cv2.COLOR_RGB2GRAY)
+                    # lgimg = cv2.resize(lgimg, (227, 227), interpolation=cv2.INTER_CUBIC)
+                    tfimgs.append(lgimg.reshape((32 * 32)))
 
     result = np.array(tfimgs)
     return result
@@ -80,5 +81,5 @@ for x, t in zipped:
     x_data.append(x)
     t_data.append(t)
 
-np.save("./data/x_tflg_{}.npy".format(len(t_data)), np.array(x_data, dtype=np.float32) / 255.0)
-np.save("./data/t_tflg_{}.npy".format(len(t_data)), np.array(t_data, dtype=np.uint8))
+np.save("./data/x_tflg_gray_{}.npy".format(len(t_data)), np.array(x_data, dtype=np.float32) / 255.0)
+np.save("./data/t_tflg_gray_{}.npy".format(len(t_data)), np.array(t_data, dtype=np.uint8))

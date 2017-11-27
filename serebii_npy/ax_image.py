@@ -14,9 +14,9 @@ labelname = [ 233, 445, 797, 785, 130, 681, ]
 # t_data = np.load("lg/xtdata/t_pokedata1000.npy").astype(np.int32)
 
 print("load data...")
-x_data = np.load("data/x_tflg_gray_3840.npy").astype(np.float32)
+x_data = np.load("data/x_tflg_lap100_38400.npy").astype(np.float32)
 print("load label...")
-t_data = np.load("data/t_tflg_gray_3840.npy").astype(np.int32)
+t_data = np.load("data/t_tflg_lap100_38400.npy").astype(np.int32)
 
 # dec = 5
 # x_data = x_data[::dec]
@@ -60,8 +60,10 @@ class IMAGE(chainer.Chain):
                 # l2=L.Linear(4096, 1024),
                 # l3=L.Linear(1024, 6),
                 l1=L.Linear(1024, 1024),
-                l2=L.Linear(1024, 144),
-                l3=L.Linear(144, 6),
+                l2=L.Linear(1024, 1024),
+                l3=L.Linear(1024, 1024),
+                l4=L.Linear(1024, 144),
+                l5=L.Linear(144, 6),
                 )
 
     def show(self, h, size, data=None):
@@ -104,7 +106,9 @@ class IMAGE(chainer.Chain):
         # # pylab.savefig("graph/fc_{}_{}.png".format(data, 1))
         h = F.relu(self.l1(h))
         h = F.relu(self.l2(h))
-        return self.l3(h)
+        h = F.relu(self.l3(h))
+        h = F.relu(self.l4(h))
+        return self.l5(h)
 
 # weight_ = IMAGE()
 # weight = L.Classifier(weight_, lossfun=F.softmax_cross_entropy, accfun=F.accuracy)
@@ -188,7 +192,7 @@ model = L.Classifier(imodel, lossfun=F.softmax_cross_entropy, accfun=F.accuracy)
 optimizer.setup(model)
 
 import os
-model_path = "./tf_poke_gray.npz"
+model_path = "./tf_poke_lap_l5.npz"
 cnt = 0
 from PIL import Image
 from lgfilter import lgpy
@@ -214,26 +218,58 @@ if os.path.exists(model_path):
         #     img = cv2.resize(v, (227, 227), interpolation=cv2.INTER_CUBIC).reshape(1, 227, 227, 3).transpose(0, 3, 1, 2).astype(np.float32)
         #     model.predictor(img, data=i)
         # - - -
-        for index, x in enumerate(x_data[970:1000]):
+        n = 5
+        for index, x in enumerate(x_test):
+            cnt += 1
+            x = x[:-12, :-12]
+            ximg = cv2.resize(x, (32, 32))
+            ximg = cv2.cvtColor(ximg, cv2.COLOR_RGB2GRAY)
+            ximg = cv2.Laplacian(ximg, cv2.CV_8U)
+            # ximg = lgpy.blur(ximg.reshape((32, 32)), 1, 32)
+            img = ximg.astype(np.float32) / 255.0
+            img = img.reshape((1, 32 * 32))
+            
+            p = model.predictor(img)
+            p = F.softmax(p)
+            tg = np.argmax(p.data)
+            print(tg, labelname[tg])
+            # pylab.savefig("./result_{}.png".format(index))
+            pylab.subplot(n + 2, 6, cnt)
+            pylab.axis("off")
+            pylab.imshow(ximg, cmap="gray")
+            cnt += 1
+            pylab.subplot(n + 2, 6, cnt)
+            pylab.axis("off")
+            ok = Image.open("../serebii/{}.png".format(labelname[tg]))
+            pylab.imshow(ok)
+        test_target = 900
+        for index, ximg in enumerate(x_data[test_target:test_target + (n*6)//2]):
             # for i in range(5):
                 cnt += 1
-                print((x.reshape((32, 32)) * 255).astype(int).shape)
-                x = lgpy.blur((x.reshape((32, 32)) * 255).astype(int), 1, 32)
-                # ximg = cv2.resize(ximg, (32, 32))
+                # print((x.reshape((32, 32)) * 255).astype(int).shape)
+                # ximg = lgpy.blur((ximg.reshape((32, 32)) * 255).astype(int), 1, 32)
+                # ximg = lgpy.blur(ximg, 1, 32)
+                # ximg = cv2.resize(x, (32, 32))
                 # ximg = cv2.cvtColor(ximg, cv2.COLOR_RGB2GRAY)
+                # ximg = cv2.Laplacian(ximg, cv2.CV_8U)
                 # img = ximg.astype(np.float32) / 255.0
-                img = x.reshape((1, 32 * 32)).astype(np.float32) / 255
+                # img = img.reshape((1, 32 * 32))
                 # img = img.transpose((2, 0, 1)).reshape((1, 3, 227, 227))
+                
+                img = ximg.reshape((1, 32 * 32)).astype(np.float32) / 255.0
                 p = model.predictor(img)
                 p = F.softmax(p)
                 tg = np.argmax(p.data)
                 print(tg, labelname[tg])
                 # pylab.savefig("./result_{}.png".format(index))
-                pylab.subplot(10, 6, cnt)
+                pylab.subplot(n + 2, 6, cnt)
                 pylab.axis("off")
-                pylab.imshow(x.reshape((32, 32)))
+                # ximg *= 255
+                # ximg = ximg.astype(np.uint8)
+                ximg = ximg.reshape((32, 32))
+                pylab.imshow(ximg, cmap="gray")
                 cnt += 1
-                pylab.subplot(10, 6, cnt)
+                pylab.subplot(n + 2, 6, cnt)
                 pylab.axis("off")
                 ok = Image.open("../serebii/{}.png".format(labelname[tg]))
                 pylab.imshow(ok)
